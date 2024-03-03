@@ -3,7 +3,7 @@ import React from 'react';
 const CustomerExperienceMobile = () => {
     return (
         <div className="hero min-h-[700px] bg-monkblack">
-            <div className="hero-content max-w-[1220px] flex-col lg:flex-row">
+            <div className="hero-content max-w-[1180px] flex-col lg:flex-row">
                 <img src="/mobileexperience.png" className="max-w-[280px] md:max-w-md rounded-lg shadow-2xl" />
                 <div>
                     <div className='grid grid-cols-1 px-7'>

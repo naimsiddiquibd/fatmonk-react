@@ -1,13 +1,20 @@
 import React from 'react';
+import { Img } from 'react-image';
 
 const Enhancing = () => {
     return (
-        <div className='bg-[#0D0D0D] flex justify-center py-20 relative overflow-x-hidden'>
-            <div className='flex items-center mt-44 overflow-x-hidden'>
-                <img className='absolute -left-0 w-[750px] z-20 left-image' src="chakti1.png" alt="" />
-                <img className='absolute -right-0 w-[750px] z-20 right-image' src="chakti2.png" alt="" />
+        <div className='bg-[#0D0D0D] flex justify-center py-20 relative overflow-x-hidden overflow-y-hidden'>
+            <div className='flex items-center mt-44 overflow-x-hidden overflow-y-hidden'>
+                <Img
+                        className='absolute -left-0 w-[600px] z-20 left-image'
+                        src="https://res.cloudinary.com/dnyx4cy8o/image/upload/v1708846893/chakti1-min_psbn45.png"
+                    />
+                <Img
+                        className='absolute -right-0 w-[600px] z-20 right-image'
+                        src="https://res.cloudinary.com/dnyx4cy8o/image/upload/v1708846878/chakti2-min_ntgg5i.png"
+                    />
             </div>
-            <div className='font-poppins text-center max-w-[280px] md:max-w-6xl'>
+            <div className='font-poppins text-center px-4 lg:px-0 lg:w-[1180px]'>
                 <h1 className='text-3xl md:text-6xl font-semibold text-monkwhite leading-[35px] md:leading-[70px]'>
                     Enhancing <span className='bg-gradient-to-r from-[#FF3D00] to-[#FFF490] bg-clip-text text-transparent '>Online Services, </span>
                     <span className='bg-gradient-to-r from-[#4100FB] to-[#00FFFE] bg-clip-text text-transparent '>Empowering</span> Businesses, and Redefining

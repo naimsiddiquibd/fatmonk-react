@@ -10,11 +10,13 @@ import Footer from '../../Components/Footer/Footer';
 import MarqueeSection from '../../Components/AboutComponents/MarqueeSection/MarqueeSection';
 import CaseStudies from '../../Components/AboutComponents/CaseStudies/CaseStudies';
 import GridGallery from '../../Components/AboutComponents/GridGallery/GridGallery';
+import StickyIcons from '../../Components/StickyIcons/StickyIcons';
 
 const Services = () => {
     return (
         <div>
             <Navbar></Navbar>
+            <StickyIcons></StickyIcons>
             <AboutHero></AboutHero>
             <CustomerExperience></CustomerExperience>
             <CustomerExperienceMobile></CustomerExperienceMobile>

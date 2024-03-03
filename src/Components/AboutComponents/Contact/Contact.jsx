@@ -5,7 +5,7 @@ import { MapPinIcon } from '@heroicons/react/24/solid'
 
 const Contact = () => {
     return (
-        <div className='lg:bg-monkblack bg-monkwhite w-full flex justify-center p-4 lg:p-16'>
+        <div className='lg:bg-monkblack bg-monkwhite w-full flex justify-center p-4 lg:px-16 lg:py-32'>
             <div className='grid grid-cols-1 lg:flex lg:gap-8 justify-items-center bg-monkwhite rounded-md'>
             <div className='relative content-between bg-monkred h-[500px] w-[300px] rounded-lg p-7 lg:m-2'>
                 <div className='absolute bottom-0 right-0'>

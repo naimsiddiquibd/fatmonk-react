@@ -1,41 +1,147 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaWhatsapp, FaRegCopy } from "react-icons/fa";
+import { CheckCircleIcon, XMarkIcon, Bars2Icon } from '@heroicons/react/24/solid'
+import { IoIosCall } from "react-icons/io";
+import './Navbar.css';
 
 const Navbar = () => {
+    const [copied, setCopied] = useState(false);
+
+    const closeSidebar = () => {
+        document.getElementById("my-drawer-3").checked = false;
+    };
+
+    const handleCopy = () => {
+        navigator.clipboard.writeText('+8801722-723891');
+        setCopied(true);
+        setTimeout(() => setCopied(false), 10000); // Reset copied state after 3 seconds
+    };
     return (
-        <div className="navbar absolute z-30 mt-5 lg:px-5 xl:px-10 2xl:px-34">
-            <div className="navbar-start">
-                <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-monkwhite" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        <div className="absolute z-[999999] drawer drawer-top">
+            <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content flex flex-col">
+                {/* Navbar */}
+                <div className="lg:w-[1180px] w-full navbar mx-auto px-2 lg:px-0">
+                    
+                    <div className="navbar-start">
+                    <Link to="/" >
+                            <img className="w-32 lg:w-[150px]" src="/logo.png" alt="Fatmonk Studio" />
+                        </Link>
                     </div>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-monkwhite rounded-box w-52 text-monkblack">
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/services">Services</Link></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Work</a></li>
-                        <li><a>Approach</a></li>
-                        <li><a>Career</a></li>
-                        <li><a>Resources</a></li>
-                    </ul>
+                    <div className="navbar-center hidden lg:flex">
+                        <ul className="menu menu-horizontal px-0 text-[8px] sm:text-[10px]  lg:text-[14px] 2xl:text-[18px] text-monkwhite font-poppins gap-0">
+                            <li><Link to="/" className='hover:text-monkred'>Home</Link></li>
+                            <li>
+                                <details>
+                                    <summary>Services</summary>
+                                    <ul className="p-2 bg-[#1D232A] text-monkwhite">
+                                        <li className='hover:text-monkred'><Link to="/development">Development</Link></li>
+                                        <li
+                                            className='hover:text-monkred'
+                                        ><Link to="/uiuxdesign">Ui/Ux Design</Link></li>
+                                        <li
+                                            className='hover:text-monkred'
+                                        ><Link to="/branddesign">Brand Design</Link></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li><Link to="/works" className='hover:text-monkred'>Works</Link></li>
+                            <li><Link to="/career" className='hover:text-monkred'>Career</Link></li>
+                            <li><Link to="/contact" className='hover:text-monkred'>Contact</Link></li>
+                        </ul>
+                    </div>
+                    <div className="navbar-end">
+                    <div className="dropdown dropdown-hover dropdown-bottom dropdown-end">
+                            <div tabIndex={0} role="button" className="bg-monkred font-poppins font-semibold px-4 py-2 lg:px-7 lg:py-3  rounded-full text-xs text-monkwhite sm:text-[10px] md:text-[10px] lg:text-[12px]  hover:bg-monkdeepred cursor-pointer">Make a Call</div>
+                            <div tabIndex={0} className="dropdown-content z-[1] card card-compact w-64 p-2 shadow bg-monkwhite text-primary-content">
+                                <div className="card-body">
+                                    <h3 className="text-sm font-semibold font-poppins text-monkblack">
+                                    👋 Hey there! Need assistance? Feel free to reach out by clicking one of the buttons below.
+                                    </h3>
+                                    <div className='bg-[#F1F9F2] px-4 py-2 rounded-full flex items-center gap-2'>
+                                        <div>
+                                            <IoIosCall className='text-[#56BA62] text-lg' />
+                                        </div>
+                                        <a href="tel:+8801722723891" className='font-semibold text-[#56BA62] text-[14px] cursor-pointer'>+8801722723891</a>
+                                        {!copied ? (
+                                            <div onClick={handleCopy} className="flex items-center gap-1 cursor-pointer">
+                                                <FaRegCopy className='text-[#7C7C7C]' />
+
+                                            </div>
+                                        ) : (
+                                            <CheckCircleIcon className='text-[#56BA62]  w-[17px]' />
+                                        )}
+                                    </div>
+                                    <Link to="https://wa.me/+8801722723891" target="_blank" rel="noopener noreferrer">
+                                        <div className='bg-[#F1F9F2] px-4 py-2 rounded-full flex items-center justify-center'>
+                                            <div className="flex items-center gap-2">
+                                                <FaWhatsapp className='text-[#56BA62] text-lg' />
+                                                <p className='font-semibold text-[#56BA62]'>WhatsApp</p>
+                                            </div>
+                                        </div>
+                                    </Link>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex-none lg:hidden">
+                        <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost text-monkwhite">
+                        <Bars2Icon className="h-6 w-6 text-blue-500" />
+                        </label>
+                    </div>
                 </div>
-                <Link to="/" className="btn btn-ghost">
-                    <img className="w-32 lg:w-[130px] xl:w-52 2xl:w-60" src="/logo.png" alt="Fatmonk Studio" />
-                </Link>
+
             </div>
-            <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-0 text-[8px] sm:text-[10px] md:text-[10px] lg:text-[12px] xl:text-[16px] 2xl:text-[24px] text-monkwhite font-poppins gap-0">
-                    <li><Link to="/" className='hover:text-monkred'>Home</Link></li>
-                    <li><Link className='hover:text-monkred' to="/services">Services</Link></li>
-                    <li><Link className='hover:text-monkred'>About Us</Link></li>
-                    <li><Link className='hover:text-monkred'>Work</Link></li>
-                    <li><Link className='hover:text-monkred'>Approach</Link></li>
-                    <li><Link className='hover:text-monkred'>Career</Link></li>
-                    <li><Link className='hover:text-monkred'>Resources</Link></li>
+            <div className="drawer-side w-full">
+                <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
+                <ul className="menu p-4 w-full min-h-full bg-[#000] gap-y-2 text-[24px] text-monkwhite">
+                    {/* Sidebar content here */}
+                   <div className='flex justify-between'>
+                   <Link to="/" >
+                        <img className="w-32 lg:w-[150px] mb-8" src="/logo.png" alt="Fatmonk Studio" />
+                    </Link>
+                    <XMarkIcon onClick={closeSidebar} className="h-6 w-6 mt-3 text-blue-500" />
+                   </div>
+                    <li><Link to="/" className='hover:text-monkred'>Home</Link>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Services</summary>
+                            <ul className="p-2 text-monkwhite text-[18px]">
+                                <li className='hover:text-monkred'><Link to="/development">Development</Link></li>
+                                <li
+                                    className='hover:text-monkred'
+                                ><Link to="/uiuxdesign">Ui/Ux Design</Link></li>
+                                <li
+                                    className='hover:text-monkred'
+                                ><Link to="/branddesign">Brand Design</Link></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><Link to="/works" className='hover:text-monkred'>Works</Link></li>
+                    <li><Link to="/career" className='hover:text-monkred'>Career</Link></li>
+                    <li><Link to="/contact" className='hover:text-monkred'>Contact</Link></li>
+                    <li className='absolute bottom-0'>
+                        <div className='absolute text-[16px]'>Follow Us</div>
+                        <div className='flex items-center gap-4'>
+                            <Link to="https://www.facebook.com/fatmonkhere">
+                                <img className='w-5 cursor-pointer hover:scale-150 transition-transform' src="/facebook.png" alt="" />
+                            </Link>
+                            <Link to="https://www.linkedin.com/company/fatmonk/mycompany/verification/">
+                                <img className='w-5 my-7 cursor-pointer hover:scale-150 transition-transform' src="/linkedin.png" alt="" />
+                            </Link>
+                            <Link to="https://www.instagram.com/fatmonkstudio/">
+                                <img className='w-5 cursor-pointer hover:scale-150 transition-transform' src="/instagram.png" alt="" />
+                            </Link>
+                            <Link to="https://www.twitter.com/fatmonkstudio/">
+                                <img className='w-5 cursor-pointer hover:scale-150 transition-transform' src="/x.png" alt="" />
+                            </Link>
+                        </div>
+                    </li>
                 </ul>
-            </div>
-            <div className="navbar-end">
-                <button className='bg-monkred font-poppins font-semibold px-4 lg:px-7 lg:py-3 2xl:px-8 py-2 2xl:py-6 rounded-full text-xs text-monkwhite sm:text-[10px] md:text-[10px] lg:text-[10px] xl:text-[12px] 2xl:text-[24px] hover:bg-monkdeepred cursor-pointer'>Make a Call</button>
             </div>
         </div>
     );

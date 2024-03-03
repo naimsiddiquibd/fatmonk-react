@@ -5,39 +5,39 @@ const FAQ = () => {
     const [activeIndex, setActiveIndex] = useState(null);
     const faqs = [
         {
-          question: "The Art of Visual Branding: How to Leverage Brand Elements to Establish Your ?",
+          question: "What services does Fatmonk Studio offer?",
           answer:
-            "Visit the Payouts page of your account to select your preferred payout method and request a payment. You need to accumulate the minimum amount, specified on the Payments page, to be able to request your Cash Back payment. You will receive your payment via check, Direct Deposit to U.S. Bank Account, PayPal, Zelle, Venmo or <strong>eGift Card</strong>.",
+            "Fatmonk Studio specializes in cutting-edge technology, avant-garde software development, visionary design, and unrivaled event management excellence.",
         },
         {
-            question: "The Art of Visual Branding: How to Leverage Brand Elements to Establish Your ?",
+            question: "How can I contact Fatmonk Studio for inquiries?",
             answer:
-              "Visit the Payouts page of your account to select your preferred payout method and request a payment. You need to accumulate the minimum amount, specified on the Payments page, to be able to request your Cash Back payment. You will receive your payment via check, Direct Deposit to U.S. Bank Account, PayPal, Zelle, Venmo or <strong>eGift Card</strong>.",
+              "You can reach out to us through our website's contact form or directly via email at <b>hello@fatmonk.studio</b>",
           },
           {
-            question: "The Art of Visual Branding: How to Leverage Brand Elements to Establish Your ?",
+            question: "Does Fatmonk Studio work with clients globally?",
             answer:
-              "Visit the Payouts page of your account to select your preferred payout method and request a payment. You need to accumulate the minimum amount, specified on the Payments page, to be able to request your Cash Back payment. You will receive your payment via check, Direct Deposit to U.S. Bank Account, PayPal, Zelle, Venmo or <strong>eGift Card</strong>.",
+              "Yes, we proudly serve clients worldwide. Regardless of your location, we're committed to delivering top-notch services and support.",
           },
           {
-            question: "The Art of Visual Branding: How to Leverage Brand Elements to Establish Your ?",
+            question: "Can Fatmonk Studio handle projects of all sizes?",
             answer:
-              "Visit the Payouts page of your account to select your preferred payout method and request a payment. You need to accumulate the minimum amount, specified on the Payments page, to be able to request your Cash Back payment. You will receive your payment via check, Direct Deposit to U.S. Bank Account, PayPal, Zelle, Venmo or <strong>eGift Card</strong>.",
+              "Absolutely! Whether you're a small startup or a large corporation, we tailor our solutions to meet your specific needs and scale.",
           },
           {
-            question: "The Art of Visual Branding: How to Leverage Brand Elements to Establish Your ?",
+            question: "What sets Fatmonk Studio apart from other studios?",
             answer:
-              "Visit the Payouts page of your account to select your preferred payout method and request a payment. You need to accumulate the minimum amount, specified on the Payments page, to be able to request your Cash Back payment. You will receive your payment via check, Direct Deposit to U.S. Bank Account, PayPal, Zelle, Venmo or <strong>eGift Card</strong>.",
+              "Our commitment to innovation, attention to detail, and dedication to client success distinguish us. We go above and beyond to exceed expectations.",
           },
           {
-            question: "The Art of Visual Branding: How to Leverage Brand Elements to Establish Your ?",
+            question: "Does Fatmonk Studio provide ongoing support after project completion?",
             answer:
-              "Visit the Payouts page of your account to select your preferred payout method and request a payment. You need to accumulate the minimum amount, specified on the Payments page, to be able to request your Cash Back payment. You will receive your payment via check, Direct Deposit to U.S. Bank Account, PayPal, Zelle, Venmo or <strong>eGift Card</strong>.",
+              "Yes, we offer comprehensive support to ensure your continued satisfaction. Our team is always available to address any questions or concerns you may have.",
           },
           {
-            question: "The Art of Visual Branding: How to Leverage Brand Elements to Establish Your ?",
+            question: "How does Fatmonk Studio ensure the security of client data?",
             answer:
-              "Visit the Payouts page of your account to select your preferred payout method and request a payment. You need to accumulate the minimum amount, specified on the Payments page, to be able to request your Cash Back payment. You will receive your payment via check, Direct Deposit to U.S. Bank Account, PayPal, Zelle, Venmo or <strong>eGift Card</strong>.",
+              "Security is our top priority. We employ industry-leading measures to safeguard your data and maintain confidentiality throughout our partnership.",
           },
       ];
       const toggleAccordion = (index) => {
@@ -45,12 +45,12 @@ const FAQ = () => {
       };
     
     return (
-        <div className='bg-[#FFEDF3] p-4 md:px-20 xl:px-40 md:py-16'>
+        <div className='bg-[#FFEDF3] px-5 lg:px-0 lg:py-16 py-6'>
             <h1 className='text-center font-poppins text-[30px] md:text-[60px] font-bold my-6 md:my-12 text-[#BD7C92]'>FAQs</h1>
-            <div className="space-y-4">
+            <div className="space-y-4 lg:w-[1180px] lg:mx-auto">
       {faqs.map((faq, index) => (
         <div
-          className="bg-monkwhite rounded-lg text-monkblack text-left font-poppins md:mx-20"
+          className="bg-monkwhite rounded-lg text-monkblack text-leftt font-poppins "
           key={index}
         >
           <button
