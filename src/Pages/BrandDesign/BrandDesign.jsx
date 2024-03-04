@@ -16,7 +16,7 @@ const BrandDesign = () => {
             <Navbar></Navbar>
             <StickyIcons></StickyIcons>
             <BrandDesignHero></BrandDesignHero>
-            <GridGallery></GridGallery>
+            {/* <GridGallery></GridGallery> */}
             <BrandCustomer></BrandCustomer>
             <OurWorks></OurWorks>
             <MarqueeSection></MarqueeSection>

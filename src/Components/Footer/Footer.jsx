@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaWhatsapp, FaRegCopy } from "react-icons/fa";
 import { IoIosCall } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -12,7 +13,10 @@ const Footer = () => {
                     </div>
                     <div>
                         <h3 className='font-semibold mt-1 md:text-[18px] w-56 md:w-96 md:leading-8 2xl:text-[22px]'>Transform Your Idea Into Reality </h3>
-                        <p className='text-[14px] md:text-[18px] lg:text-[20px] mt-3'>Fatmonk, 2024.</p>
+                        <div className='flex items-center gap-1 mt-3'>
+                            <img src="/with.png" className='h-6' alt="" />
+                            <p className='text-[14px] md:text-[18px] lg:text-[20px]'>Fatmonk</p>
+                        </div>
                     </div>
                 </div>
                 <div className='md:flex md:justify-between lg:flex lg:items-top gap-4 lg:gap-8 xl:gap-8 2xl:gap-16 2xl:text-[18px]'>
@@ -22,20 +26,44 @@ const Footer = () => {
                         <a className="link link-hover">Personal AI Manager</a>
                         <a className="link link-hover">AI Business Writer</a>
                     </nav> */}
-                    <nav className='flex flex-col gap-4 lg:gap-3 xl:gap-3 2xl:gap-7'>
+                    {/* <nav className='flex flex-col gap-4 lg:gap-3 xl:gap-3 2xl:gap-7'>
                         <h6 className="footer-title">Company</h6>
                         <a className="link link-hover">Blog</a>
                         <a className="link link-hover">Careers</a>
                         <a className="link link-hover">News</a>
+                    </nav> */}
+
+                    {/* <nav className='flex flex-col gap-4 lg:gap-3 xl:gap-3 2xl:gap-7'>
+                        <h6 className="footer-title">Services</h6>
+                        <a className="link link-hover">Development</a>
+                        <a className="link link-hover">UI UX Design</a>
+                        <a className="link link-hover">Brand Design</a>
+                    </nav> */}
+
+                    <nav className='flex flex-col gap-4 lg:gap-3 xl:gap-3 2xl:gap-7 '>
+                        <h6 className="footer-title">Office Location</h6>
+
+                        <div className="relative">
+                            <Link to="https://g.page/r/CX2NJetJdEQkEB0/review" className='w-[120px] absolute top-0 right-0 m-2 lg:m-1 z-50 cursor-pointer'>
+                                <img src="/review.png" alt="" className="hover:transition hover:ease-in-out hover:elay-150  hover:-translate-y-1 hover:scale-110 hover:duration-30" />
+                            </Link>
+                            <iframe
+                                className="w-[280px] h-[100px] rounded-lg relative"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.694210064945!2d90.4088496!3d23.7939011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c713242c0001%3A0x24447449eb258d7d!2zRmF0bW9uayBTdHVkaW8g4Kar4KeN4Kav4Ka-4Kaf4Kau4KaZ4KeN4KaVIOCmuOCnjeCmn-CngeCmoeCmv-Cmkw!5e0!3m2!1sen!2sbd!4v1709535656504!5m2!1sen!2sbd%22%20width=%22600%22%20height=%22450%22%20style=%22border:0;%22%20allowfullscreen=%22%22%20loading=%22lazy%22%20referrerpolicy=%22no-referrer-when-downgrade"
+                                frameBorder="0"
+                                style={{ border: '0' }}
+                                allowFullScreen=""
+                                aria-hidden="false"
+                                tabIndex="0"
+                            ></iframe>
+                        </div>
+
+
+
                     </nav>
-                    <nav className='flex flex-col gap-4 lg:gap-3 xl:gap-3 2xl:gap-7'>
-                        <h6 className="footer-title">Resources</h6>
-                        <a className="link link-hover">Documentation</a>
-                        <a className="link link-hover">Papers</a>
-                        <a className="link link-hover">Press Conferences</a>
-                    </nav>
+
                     <nav className='flex flex-col gap-1 mt-5 lg:mt-0 lg:gap-0 xl:gap-3'>
-                        <h6 className="mb-2 text-xl">Get In Touch</h6>
+                        <h6 className="footer-title">Get In Touch</h6>
                         <p className='font-bold text-2xl mt-1 lg:mt-0'>+8801722723891</p>
                         <div className='flex items-center gap-3 mt-2 lg:mt-0'>
                             <a href="tel:+8801722723891" className='flex items-center gap-1 cursor-pointer'>
@@ -48,6 +76,7 @@ const Footer = () => {
                             </a>
                         </div>
                     </nav>
+
                 </div>
             </footer>
             <footer className="footer gap-y-2 p-10 lg:p-0 lg:py-10  items-center  bg-monkblack text-monkwhite flex flex-col lg:flex-row lg:justify-between text-[12px] md:text-[14px] lg:text-[14px] xl:text-[16px] lg:w-[1180px] lg:mx-auto">

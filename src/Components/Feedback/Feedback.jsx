@@ -4,17 +4,17 @@ const Feedback = () => {
     return (
         <div className='py-10 md:py-16 bg-[#F6F6F6] flex flex-col justify-center items-center'>
             <h1 className='text-center text-[30px] md:text-[60px] font-poppins font-bold my-7 md:my-16 text-monkblack'>Client Feedback</h1>
-            <div className="carousel carousel-center rounded-box px-5 w-80 sm:w-[300px] md:w-[700px] lg:w-[900px] xl:w-[1400px]">
+            <div className="carousel carousel-center max-w-xs lg:max-w-7xl p-4 space-x-4  rounded-box my-6">
 
                 <div className="carousel-item p-5 bg-monkwhite mr-5 rounded-box flex flex-col items-center">
                     <div className='max-w-[260px]'>
                         <div className='flex gap-4 items-center'>
                             <div className='rounded-full h-[76.31px] w-[76.31px]'>
-                                <img src="/client.png" alt="" />
+                                <img src="/client1.png" alt="" />
                             </div>
                             <div>
-                                <h3 className='font-poppins text-lg font-bold text-[#000]'>Sarah Johnson</h3>
-                                <p className='text-[14px] font-poppins leading-3'>CEO, Gamefly Ltd.</p>
+                                <h3 className='font-poppins text-lg font-bold text-[#000]'>Nazr Irfan</h3>
+                                <p className='text-[14px] font-poppins leading-3'>CEO, Tegra Design</p>
                             </div>
                         </div>
                         <div>
@@ -22,13 +22,13 @@ const Feedback = () => {
                                 <img src="/comma.png" alt="" />
                             </div>
                             <div>
-                                <p className='text-[15px] font-poppins text-[#000]'>Fatmonk Studio's visionary approach elevated our brand. Impeccable service, seamless execution. A game-changer in event excellence.</p>
+                                <p className='text-[15px] font-poppins text-[#000]'>Fatmonk Studio's professionalism and creativity surpassed expectations. Highly recommended for software development.</p>
                             </div>
                         </div>
                     </div>
-                    <div className='mt-5'>
+                    {/* <div className='mt-5'>
                         <img src="tesla.png" alt="" />
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="carousel-item p-5 bg-monkwhite mr-5 rounded-box flex flex-col items-center">
@@ -38,7 +38,7 @@ const Feedback = () => {
                                 <img src="/client.png" alt="" />
                             </div>
                             <div>
-                                <h3 className='font-poppins text-lg font-bold text-[#000]'>David Chang</h3>
+                                <h3 className='font-poppins text-lg font-bold text-[#000]'>Hussain Ahmed</h3>
                                 <p className='text-[14px] font-poppins leading-3'>CTO, Mangify Io</p>
                             </div>
                         </div>
@@ -47,20 +47,20 @@ const Feedback = () => {
                                 <img src="/comma.png" alt="" />
                             </div>
                             <div>
-                                <p className='text-[15px] font-poppins text-[#000]'>Unmatched tech solutions. Fatmonk Studio delivers beyond expectations. Their expertise transforms concepts into reality. Highly recommended!</p>
+                                <p className='text-[15px] font-poppins text-[#000]'>Fatmonk Studio delivers satisfactory services, wishing them continued success in business growth. I'm wishing there success.</p>
                             </div>
                         </div>
                     </div>
-                    <div className='mt-5'>
+                    {/* <div className='mt-5'>
                         <img src="tesla.png" alt="" />
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="carousel-item p-5 bg-monkwhite mr-5 rounded-box flex flex-col items-center">
                     <div className='max-w-[260px]'>
                         <div className='flex gap-4 items-center'>
                             <div className='rounded-full h-[76.31px] w-[76.31px]'>
-                                <img src="/client.png" alt="" />
+                                <img src="/client2.png" alt="" />
                             </div>
                             <div>
                                 <h3 className='font-poppins text-lg font-bold text-[#000]'>Emily Lee</h3>
@@ -72,202 +72,144 @@ const Feedback = () => {
                                 <img src="/comma.png" alt="" />
                             </div>
                             <div>
-                                <p className='text-[15px] font-poppins text-[#000]'>Revolutionary design concepts. Fatmonk Studio's creativity captivates. They understand our vision, delivering impactful results. Exceptional partnership!</p>
+                                <p className='text-[15px] font-poppins text-[#000]'> Fatmonk is an awesome working place for the programmers and developers of this tech startup. Great experience visiting as a guest with Fatmonk.</p>
                             </div>
                         </div>
                     </div>
-                    <div className='mt-5'>
+                    {/* <div className='mt-5'>
                         <img src="tesla.png" alt="" />
-                    </div>
-                </div>
-
-                <div className="carousel-item p-5 bg-monkwhite mr-5 rounded-box flex flex-col items-center">
-                    <div className='max-w-[260px]'>
-                        <div className='flex gap-4 items-center'>
-                            <div className='rounded-full h-[76.31px] w-[76.31px]'>
-                                <img src="/client.png" alt="" />
-                            </div>
-                            <div>
-                                <h3 className='font-poppins text-lg font-bold text-[#000]'>Michael Patel</h3>
-                                <p className='text-[14px] font-poppins leading-3'>CFO, Teamsocket Lnc.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className='w-[52.50px] my-4'>
-                                <img src="/comma.png" alt="" />
-                            </div>
-                            <div>
-                                <p className='text-[15px] font-poppins text-[#000]'>Efficient event management. The precision ensures flawless execution. Budget-friendly, yet quality-driven. Elevated our corporate gatherings. Impressed!"</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='mt-5'>
-                        <img src="tesla.png" alt="" />
-                    </div>
-                </div>
-                
-                <div className="carousel-item p-5 bg-monkwhite mr-5 rounded-box flex flex-col items-center">
-                    <div className='max-w-[260px]'>
-                        <div className='flex gap-4 items-center'>
-                            <div className='rounded-full h-[76.31px] w-[76.31px]'>
-                                <img src="/client.png" alt="" />
-                            </div>
-                            <div>
-                                <h3 className='font-poppins text-lg font-bold text-[#000]'>Rachel Wong</h3>
-                                <p className='text-[14px] font-poppins leading-3'>Creative Director, CCR Tech</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className='w-[52.50px] my-4'>
-                                <img src="/comma.png" alt="" />
-                            </div>
-                            <div>
-                                <p className='text-[15px] font-poppins text-[#000]'>Cutting-edge software solutions. Fatmonk Studio's innovation sets them apart. Seamless integration, user-centric design. They excel in digital transformation.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='mt-5'>
-                        <img src="tesla.png" alt="" />
-                    </div>
-                </div>
-
-                <div className="carousel-item p-5 bg-monkwhite mr-5 rounded-box flex flex-col items-center">
-                    <div className='max-w-[260px]'>
-                        <div className='flex gap-4 items-center'>
-                            <div className='rounded-full h-[76.31px] w-[76.31px]'>
-                                <img src="/client.png" alt="" />
-                            </div>
-                            <div>
-                                <h3 className='font-poppins text-lg font-bold text-[#000]'>Daniel Thompson</h3>
-                                <p className='text-[14px] font-poppins leading-3'>HR Manager, Onzide Lmt.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className='w-[52.50px] my-4'>
-                                <img src="/comma.png" alt="" />
-                            </div>
-                            <div>
-                                <p className='text-[15px] font-poppins text-[#000]'>Exceptional service. Fatmonk Studio exceeds expectations. Their attention to detail ensures success. Reliable partners in event planning. Truly outstanding!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='mt-5'>
-                        <img src="tesla.png" alt="" />
-                    </div>
-                </div>
-
-                <div className="carousel-item p-5 bg-monkwhite mr-5 rounded-box flex flex-col items-center">
-                    <div className='max-w-[260px]'>
-                        <div className='flex gap-4 items-center'>
-                            <div className='rounded-full h-[76.31px] w-[76.31px]'>
-                                <img src="/client.png" alt="" />
-                            </div>
-                            <div>
-                                <h3 className='font-poppins text-lg font-bold text-[#000]'>Lauren Miller</h3>
-                                <p className='text-[14px] font-poppins leading-3'>Operations Manager, Backcode Team</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className='w-[52.50px] my-4'>
-                                <img src="/comma.png" alt="" />
-                            </div>
-                            <div>
-                                <p className='text-[15px] font-poppins text-[#000]'>Reliable technology partner. Fatmonk Studio's solutions streamline operations. Their commitment to excellence enhances efficiency. A valuable asset to our team!"</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='mt-5'>
-                        <img src="tesla.png" alt="" />
-                    </div>
-                </div>
-                <div className="carousel-item p-5 bg-monkwhite mr-5 rounded-box flex flex-col items-center">
-                    <div className='max-w-[260px]'>
-                        <div className='flex gap-4 items-center'>
-                            <div className='rounded-full h-[76.31px] w-[76.31px]'>
-                                <img src="/client.png" alt="" />
-                            </div>
-                            <div>
-                                <h3 className='font-poppins text-lg font-bold text-[#000]'>Kevin Anderson</h3>
-                                <p className='text-[14px] font-poppins leading-3'>Sales Manager, Vienna Pvt. Ltd.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className='w-[52.50px] my-4'>
-                                <img src="/comma.png" alt="" />
-                            </div>
-                            <div>
-                                <p className='text-[15px] font-poppins text-[#000]'>Strategic design expertise. Fatmonk Studio's creativity drives results. Their solutions amplify our sales efforts. An essential partner in business growth.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='mt-5'>
-                        <img src="tesla.png" alt="" />
-                    </div>
-                </div>
-                <div className="carousel-item p-5 bg-monkwhite mr-5 rounded-box flex flex-col items-center">
-                    <div className='max-w-[260px]'>
-                        <div className='flex gap-4 items-center'>
-                            <div className='rounded-full h-[76.31px] w-[76.31px]'>
-                                <img src="/client.png" alt="" />
-                            </div>
-                            <div>
-                                <h3 className='font-poppins text-lg font-bold text-[#000]'>Sandra Roberts</h3>
-                                <p className='text-[14px] font-poppins leading-3'>Project Manager, S&R Tech</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className='w-[52.50px] my-4'>
-                                <img src="/comma.png" alt="" />
-                            </div>
-                            <div>
-                                <p className='text-[15px] font-poppins text-[#000]'>Seamless event execution. Fatmonk Studio's professionalism shines. From planning to implementation, they deliver excellence. A trusted ally in project success.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='mt-5'>
-                        <img src="tesla.png" alt="" />
-                    </div>
-                </div>
-                <div className="carousel-item p-5 bg-monkwhite mr-5 rounded-box flex flex-col items-center">
-                    <div className='max-w-[260px]'>
-                        <div className='flex gap-4 items-center'>
-                            <div className='rounded-full h-[76.31px] w-[76.31px]'>
-                                <img src="/client.png" alt="" />
-                            </div>
-                            <div>
-                                <h3 className='font-poppins text-lg font-bold text-[#000]'>Jason Taylor</h3>
-                                <p className='text-[14px] font-poppins leading-3'>Customer Support Lead, Nance Media</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className='w-[52.50px] my-4'>
-                                <img src="/comma.png" alt="" />
-                            </div>
-                            <div>
-                                <p className='text-[15px] font-poppins text-[#000]'>Welcome to Fatmonk Studio: Where Tech, Software, Design, and Events Flourish! As your dedicated studio, we translate user insights into dynamic strategies, collaborating across diverse industries and expertise</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='mt-5'>
-                        <img src="tesla.png" alt="" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
             {/* bottom logos */}
-            <div className="carousel carousel-center max-w-2xl p-4 space-x-4  rounded-box my-6">
+            <div className="carousel carousel-center max-w-xs lg:max-w-2xl p-4 space-x-4  rounded-box my-6">
                 <div className="carousel-item">
-                    <img src="/deal.png" className="rounded-box w-[120px] h-full" />
+                    <img src="/client/0.png" className="rounded-box w-[120px] h-full" />
                 </div>
 
                 <div className="carousel-item">
-                    <img src="/msi.png" className="rounded-box w-[120px] h-full" />
+                    <img src="/client/2.png" className="rounded-box w-[120px] h-full" />
                 </div>
                 <div className="carousel-item">
-                    <img src="/intell.png" className="rounded-box w-[120px] h-full" />
+                    <img src="/client/3.png" className="rounded-box w-[120px] h-full" />
                 </div>
                 <div className="carousel-item">
-                    <img src="/oil.png" className="rounded-box w-[120px] h-full" />
+                    <img src="/client/4.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/5.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/6.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/7.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/8.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/9.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/10.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/14.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/15.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/16.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/17.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/18.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/19.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/20.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/21.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/22.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/23.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/24.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/25.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/26.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/27.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/28.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/29.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/30.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/31.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/32.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/33.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/34.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/35.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/36.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/37.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/38.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/39.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/40.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/41.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/42.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/43.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/44.png" className="rounded-box w-[120px] h-full" />
+                </div>
+                <div className="carousel-item">
+                    <img src="/client/45.png" className="rounded-box w-[120px] h-full" />
                 </div>
             </div>
         </div>
