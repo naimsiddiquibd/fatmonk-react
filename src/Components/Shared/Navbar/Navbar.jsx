@@ -26,7 +26,7 @@ const Navbar = () => {
                     
                     <div className="navbar-start">
                     <Link to="/" >
-                            <img className="w-32 lg:w-[150px]" src="/logo.png" alt="Fatmonk Studio" />
+                            <img className="w-32 lg:w-[150px]" src="/logo.svg" alt="Fatmonk Studio" />
                         </Link>
                     </div>
                     <div className="navbar-center hidden lg:flex">

@@ -45,12 +45,12 @@ const FAQ = () => {
       };
     
     return (
-        <div className='bg-[#FFEDF3] px-5 lg:px-0 lg:py-16 py-6'>
-            <h1 className='text-center font-poppins text-[30px] md:text-[60px] font-bold my-6 md:my-12 text-[#BD7C92]'>FAQs</h1>
-            <div className="space-y-4 lg:w-[1180px] lg:mx-auto">
+        <div className='bg-[#000] px-5 lg:px-0 lg:py-16 py-6'>
+            <h1 className='text-center font-poppins text-[30px] md:text-[60px] font-bold my-6 md:my-12 text-monkwhite'>Have Questions ?</h1>
+            <div className="space-y-4 lg:w-[980px] lg:mx-auto">
       {faqs.map((faq, index) => (
         <div
-          className="bg-monkwhite rounded-lg text-monkblack text-leftt font-poppins "
+          className="bg-[#131313] rounded-lg text-monkwhite text-leftt font-poppins "
           key={index}
         >
           <button
@@ -58,11 +58,11 @@ const FAQ = () => {
             onClick={() => toggleAccordion(index)}
           >
             
-            <span className="font-medium text-left text-[14px] md:text-[16px] lg:text-[18px]  flex items-center">
-            <img src="/circle.png" className='w-5 mr-4' alt="" />
+            <span className="font-medium text-left text-[14px] md:text-[16px] lg:text-[24px]  flex items-center lg:p-4">
+           
                 {faq.question}</span>
             <HiOutlineChevronDown
-              className={`transition-transform duration-300 w-32 text-[#BD7C91] ${
+              className={`transition-transform duration-300 w-32 text-monkwhite ${
                 activeIndex === index ? "transform rotate-180" : ""
               }`}
             />

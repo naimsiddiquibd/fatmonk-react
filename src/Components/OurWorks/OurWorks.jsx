@@ -43,7 +43,7 @@ const OurWorks = () => {
                         }}
                     >
                         <div className='md:w-[530px] md:h-[707px] w-[280px] relative overflow-hidden rounded-3xl hover:rounded-[70px] transition-all duration-300'>
-                            <img src="/work1.png" alt="" className='transition-transform duration-300 transform hover:scale-110 rounded-lg' />
+                            <img src="/work1.png" alt="" className='transition-transform duration-300 transform hover:scale-150 rounded-lg' />
                         </div>
                         <h3 className='text-start md:w-[530px] md:text-[28px] text-[20px] mt-2 text-monkwhite font-poppins font-semibold w-[280px] leading-6 lg:leading-9'>Threadwel - Market Place For RMG and Garments Industry</h3>
                         <p className='text-start md:w-[530px] md:text-[20px] text-[16px] mt-2 text-monkwhite font-poppins font-normal w-[280px] leading-5 lg:leading-7'>UI/UX Design • Website Development • Software Development</p>
@@ -60,7 +60,7 @@ const OurWorks = () => {
                         }}
                     >
                         <div className='md:w-[530px] md:h-[707px] w-[280px] relative overflow-hidden rounded-3xl hover:rounded-[70px] transition-all duration-300 md:mt-24'>
-                            <img src="/work2.png" alt="" className='transition-transform duration-300 transform hover:scale-110 rounded-lg' />
+                            <img src="/work2.png" alt="" className='transition-transform duration-300 transform hover:scale-150 rounded-lg' />
                         </div>
                         <h3 className='text-start md:w-[530px] md:text-[28px] text-[20px] mt-2 text-monkwhite font-poppins font-semibold w-[280px] leading-6 lg:leading-9'>Ispahani - Group Website & CRM System</h3>
                         <p className='text-start md:w-[530px] md:text-[20px] text-[16px] mt-2 text-monkwhite font-poppins font-normal w-[280px] leading-5 lg:leading-7'>UI/UX Design • Website Development • Software Development</p>
@@ -77,7 +77,7 @@ const OurWorks = () => {
                         }}
                     >
                         <div className='md:w-[530px] md:h-[707px] w-[280px] relative overflow-hidden rounded-3xl hover:rounded-[70px] transition-all duration-300'>
-                            <img src="/work3.png" alt="" className='transition-transform duration-300 transform hover:scale-110 rounded-lg' />
+                            <img src="/work3.png" alt="" className='transition-transform duration-300 transform hover:scale-150 rounded-lg' />
                         </div>
                         <h3 className='text-start md:w-[530px] md:text-[28px] text-[20px] mt-2 text-monkwhite font-poppins font-semibold w-[280px] leading-6 lg:leading-9'>Marina - Booking System & Website</h3>
                         <p className='text-start md:w-[530px] md:text-[20px] text-[16px] mt-2 text-monkwhite font-poppins font-normal w-[280px] leading-5 lg:leading-7'>UI/UX Design • Website Development • Software Development</p>
@@ -94,7 +94,7 @@ const OurWorks = () => {
                         }}
                     >
                         <div className='md:w-[530px] md:h-[707px] w-[280px] relative overflow-hidden rounded-3xl hover:rounded-[70px] transition-all duration-300 md:mt-24'>
-                            <img src="/work4.png" alt="" className='transition-transform duration-300 transform hover:scale-110 rounded-lg' />
+                            <img src="/work4.png" alt="" className='transition-transform duration-300 transform hover:scale-150 rounded-lg' />
                         </div>
                         <h3 className='text-start md:w-[530px] md:text-[28px] text-[20px] mt-2 text-monkwhite font-poppins font-semibold w-[280px] leading-6 lg:leading-9'>Digital Health - Degital Health Care Solutions</h3>
                         <p className='text-start md:w-[530px] md:text-[20px] text-[16px] mt-2 text-monkwhite font-poppins font-normal w-[280px] leading-5 lg:leading-7'>UI/UX Design • Website Development • Software Development</p>

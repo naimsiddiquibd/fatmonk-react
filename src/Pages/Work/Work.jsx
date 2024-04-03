@@ -17,7 +17,7 @@ const Work = () => {
            <WorkHero></WorkHero>
            <OurWorks></OurWorks>
            <MarqueeSection></MarqueeSection>
-           <GridGallery></GridGallery>
+     
            <Feedback></Feedback>
            <Contact></Contact>
            <Footer></Footer>

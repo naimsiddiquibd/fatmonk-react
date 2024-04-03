@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 const TopServices = () => {
     return (
         <div className=" bg-[#0D0D0D] py-16">
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-1 lg:w-[1180px] mx-auto'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-1 lg:gap-3 lg:w-[1180px] mx-auto'>
             <motion.div
                 initial={{ y: -100, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}

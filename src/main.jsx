@@ -13,6 +13,10 @@ import BrandDesign from './Pages/BrandDesign/BrandDesign.jsx';
 import Work from './Pages/Work/Work.jsx';
 import Career from './Pages/Career/Career.jsx';
 import ContactPage from './Pages/ContactPage/ContactPage.jsx';
+import Ruby from './Pages/Ruby/Ruby.jsx';
+import UiUxJob from './Pages/UiUxJob/UiUxJob.jsx';
+import JrDev from './Pages/JrDev/JrDev.jsx';
+import Planner from './Pages/Planner/Planner.jsx';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +46,22 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactPage></ContactPage>
+  },
+  {
+    path: "/ruby-on-rails-developer",
+    element: <Ruby></Ruby>
+  },
+  {
+    path: "/ui-ux-designer",
+    element: <UiUxJob></UiUxJob>
+  },
+  {
+    path: "/junior-developer",
+    element: <JrDev></JrDev>
+  },
+  {
+    path: "/planner",
+    element: <Planner></Planner>
   },
 ]);
 
