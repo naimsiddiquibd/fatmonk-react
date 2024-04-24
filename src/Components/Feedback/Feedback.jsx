@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/24/solid'
 
 const Feedback = () => {
+    const [clients, setClients] = useState([]);
+
+    useEffect(() => {
+        // Fetch data from the API
+        fetch('https://fatmonk.dupbsdaa.com/api/clients')
+            .then(response => response.json())
+            .then(data => setClients(data))
+            .catch(error => console.error('Error fetching clients:', error));
+    }, []);
     return (
         <div className='py-10 md:py-16 bg-[#000] flex flex-col justify-center items-center bg-no-repeat' style={{
             backgroundImage: `url('/feedbackbg.png')`,
@@ -46,118 +55,13 @@ const Feedback = () => {
 
             <div className='mt-8 lg:mt-16'>
                 <div className='lg:grid lg:grid-cols-6 lg:gap-3'>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/0.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/1.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/2.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/3.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/4.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/5.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/6.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/7.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/8.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/9.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/14.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/15.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/16.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/17.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/18.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/19.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/20.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/21.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/22.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/23.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/24.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/25.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/26.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/27.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/28.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/29.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/30.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/31.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/32.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/33.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/34.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/34.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/35.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/36.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/37.png" alt="" />
-                    </div>
-                    <div className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
-                        <img src="/client/38.png" alt="" />
-                    </div>
-
+                    {clients.map((client, index) => (
+                        <div key={index} className='w-[280px] h-[130px] lg:w-[190px] lg:h-[90px] bg-monkwhite flex justify-center rounded-[10px] mt-4 lg:mt-0'>
+                            <img src={`https://fatmonk.dupbsdaa.com/uploads/${client.logo.filename}`} alt="" />
+                        </div>
+                    ))}
                 </div>
             </div>
-
 
 
 

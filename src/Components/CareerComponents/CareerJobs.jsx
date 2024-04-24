@@ -30,6 +30,27 @@ const CareerJobs = () => {
             <div className='font-poppins text-center z-30'>
             
                 <div className='grid grid-cols-1 xl:grid-cols-2 gap-6 md:gap-10 lg:px-60 px-6'>
+                <motion.div
+                        initial={{ y: 100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{
+                            delay: 0.2,
+                            y: { type: 'spring', stiffness: 60 },
+                            opacity: { duration: 0.2 },
+                            ease: "easeIn",
+                            duration: 0.2,
+                        }}
+                    >
+                       <Link to="/junior-developer" className="card w-full bg-[#000] shadow-xl">
+                            <figure><img src="/job2.png" alt="Shoes" /></figure>
+                            <div className="card-body text-left">
+                                <h2 className="card-title text-monkwhite text-2xl">Software Engineer</h2>
+                                <h3 className='text-monkred text-lg leading-3 mb-4 font-semibold'>Full time</h3>
+                                <p className='text-monkwhite text-sm'>We're on the lookout for a skilled Software Engineer (Laravel & React) to join our team at Fatmonk. As a key member, you'll be instrumental in developing and maintaining our web-based applications.</p>
+
+                            </div>
+                        </Link>
+                    </motion.div>
                     <motion.div
                         initial={{ y: 100, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
@@ -68,27 +89,6 @@ const CareerJobs = () => {
                                 <h2 className="card-title text-monkwhite text-2xl">Ui Ux Designer</h2>
                                 <h3 className='text-monkred text-lg leading-3 mb-4 font-semibold'>Full time</h3>
                                 <p className='text-monkwhite text-sm'>The UI/UX Designer is pivotal for content creation and production, crafting compelling stories, and bringing ideas to life through impactful design. Success demands attention to detail, superb skills.</p>
-
-                            </div>
-                        </Link>
-                    </motion.div>
-                    <motion.div
-                        initial={{ y: 100, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        transition={{
-                            delay: 0.2,
-                            y: { type: 'spring', stiffness: 60 },
-                            opacity: { duration: 0.2 },
-                            ease: "easeIn",
-                            duration: 0.2,
-                        }}
-                    >
-                       <Link to="/junior-developer" className="card w-full bg-[#000] shadow-xl">
-                            <figure><img src="/job2.png" alt="Shoes" /></figure>
-                            <div className="card-body text-left">
-                                <h2 className="card-title text-monkwhite text-2xl">Junior Developer</h2>
-                                <h3 className='text-monkred text-lg leading-3 mb-4 font-semibold'>Full time</h3>
-                                <p className='text-monkwhite text-sm'>We're seeking a Junior Developer to join our team, responsible for web app development and maintenance. This role offers a chance to work closely with our dedicated team, contributing to our web-based applications.</p>
 
                             </div>
                         </Link>

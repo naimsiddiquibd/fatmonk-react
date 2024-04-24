@@ -12,7 +12,7 @@ const JrDev = () => {
     return (
         <div>
             <Helmet>
-                <title>Junior Developer Position - Fatmonk</title>
+                <title>Software Engineer Position - Fatmonk</title>
                 <meta property="og:title" content="Junior Developer Position - Fatmonk" />
                 <meta property="og:description" content="We are looking for a Junior Developer who will work with our dedicated team. In this role, you will be responsible for the development and maintenance of our web-based applications." />
                 <meta property="og:image" content="/job2.png" />
@@ -63,22 +63,22 @@ const JrDev = () => {
                     </div>
                     <div className='p-3 mt-6'>
                         <p className='text-sm lg:text-lg text-monkwhite'>
-                            We are looking for a Junior Developer who will work with our dedicated team. In this role, you will be responsible for the development and maintenance of our web-based applications.
+                        We're on the lookout for a skilled Software Engineer (Laravel & React) to join our team at Fatmonk. As a key member, you'll be instrumental in developing and maintaining our web-based applications.
                         </p>
                         <div className='mt-6'>
                             <h2 className='text-xl lg:text-3xl font-poppins font-semibold text-monkwhite'>Job Responsibilities</h2>
                             <p className='text-sm lg:text-lg text-monkwhite mt-3'>
                                 <ul className='list-disc pl-4'>
-                                    <li>Assisting the development manager with all aspects of software design and coding.</li>
-                                    <li>Attending and contributing to company development meetings.</li>
-                                    <li>Learning the codebase and improving your coding skills.</li>
-                                    <li>Writing and maintaining code.</li>
-                                    <li>Working on minor bug fixes.</li>
+                                    <li>Collaborating with the development manager on software design and coding tasks, with a focus on utilizing Laravel for backend development and React for frontend development.</li>
+                                    <li>Participating in company development meetings and contributing valuable insights.</li>
+                                    <li>Familiarize yourself with our codebase and continuously enhance your coding proficiency, particularly in Laravel and React.</li>
+                                    <li>Writing clean and efficient code while ensuring its maintenance.</li>
+                                    <li>Addressing minor bugs and implementing fixes promptly.</li>
                                     <li>Monitoring the technical performance of internal systems.</li>
-                                    <li>Responding to requests from the development team.</li>
-                                    <li>Gathering information from consumers about program functionality.</li>
-                                    <li>Writing reports.</li>
-                                    <li>Conducting development tests.</li>
+                                    <li>Monitoring the technical performance of our internal systems.</li>
+                                    <li>GResponding to development team inquiries and requests.</li>
+                                    <li>Gathering feedback from users to improve program functionality.</li>
+                                    <li>Generating reports and conducting development tests.</li>
                                 </ul>
                             </p>
                         </div>
@@ -86,15 +86,12 @@ const JrDev = () => {
                             <h2 className='text-xl lg:text-3xl font-poppins font-semibold text-monkwhite'>Required Expertise / Skills</h2>
                             <p className='text-sm lg:text-lg text-monkwhite mt-3'>
                                 <ul className='list-disc pl-4'>
-                                    <li>Must have experience with Laravel Framework.</li>
-                                    <li>Experience with a relational database, preferably MySQL.</li>
-                                    <li>Design a database and scale it efficiently.</li>
-                                    <li>E-Commerce website developing experience is highly preferred.</li>
-                                    <li>Good command on HTML5, CSS, JavaScript</li>
-                                    <li>Strong Knowledge on web services (API Development and integration)</li>
-                                    <li>Experience on Frontend Framework(React / Vue)</li>
-                                    <li>Basic Knowledge of Server/cPanel/Hosting.</li>
-                                    <li>Familiarity with code versioning tools such as Git, Gitlab, or GitHub</li>
+                                    <li>Proficiency in Laravel Framework.</li>
+                                    <li>Extensive experience in frontend development using React.</li>
+                                    <li>Experience with relational databases, particularly MySQL, including efficient database design and scaling.</li>
+                                    <li>Preferred experience in developing E-Commerce websites.</li>
+                                    <li>Knowledgeable about web services, including API development and integration.</li>
+                                    <li>Basic understanding of server management, cPanel, and hosting.</li>
                                 </ul>
                             </p>
                         </div>
@@ -102,10 +99,9 @@ const JrDev = () => {
                             <h2 className='text-xl lg:text-3xl font-poppins font-semibold text-monkwhite'>Additional Requirements</h2>
                             <p className='text-sm lg:text-lg text-monkwhite mt-3'>
                                 <ul className='list-disc pl-4'>
-                                    <li>Eagerness to learn and adopt new technologies.</li>
+                                    <li>Demonstrated eagerness to learn and adapt to new technologies, including Redux for state management and other relevant tools for React development.</li>
                                     <li>Excellent communication and interpersonal skills.</li>
-                                    <li>Capable of working under pressure.</li>
-                                    <li>Individual problem solving skill.</li>
+                                    <li>Ability to perform under pressure and solve problems independently.</li>
                                 </ul>
                             </p>
                         </div>
@@ -113,9 +109,9 @@ const JrDev = () => {
                             <h2 className='text-xl lg:text-3xl font-poppins font-semibold text-monkwhite'>Qualifications</h2>
                             <p className='text-sm lg:text-lg text-monkwhite mt-3'>
                                 <ul className='list-disc pl-4'>
-                                    <li>Minimum Bachelor’s Degree in CSE/CS/CIS or other relevant fields.</li>
-                                    <li>1+ years experience</li>
-                                    <li>Willing to commit at least 2 years of service to Fatmonk.</li>
+                                    <li>Bachelor’s Degree in CSE/CS/CIS or related fields.</li>
+                                    <li>Minimum of 2+ years of relevant experience.</li>
+                                    <li>Commitment to at least 2 years of service with Fatmonk.</li>
                                 </ul>
                             </p>
                         </div>
@@ -124,9 +120,8 @@ const JrDev = () => {
                             <p className='text-sm lg:text-lg text-monkwhite mt-3'>
                                 <ul className='list-disc pl-4'>
                                     <li>Festival Bonus: 2.</li>
-                                    <li>Office Lunch (Partially Subsidized).</li>
-                                    <li>Friendly working environment.</li>
-                                    <li>Unlimited Tea/Coffee.</li>
+                                    <li>Partially Subsidized Office Lunch.</li>
+                                    <li>Supportive and friendly working environment.</li>
                                 </ul>
                             </p>
                         </div>
@@ -136,7 +131,7 @@ const JrDev = () => {
                                 <ul className='list-disc pl-4'>
                                     <li>Full-time</li>
                                     <li>Work Week: Sunday to Thursday</li>
-                                    <li>Work Hours: 10:00 AM to 6:00 PM (Flexible)</li>
+                                    <li>Flexible Work Hours: 10:00 AM to 6:00 PM.</li>
                                     <li>Office Location: Banani, Dhaka, Bangladesh</li>
                                     <li>Monthly Salary: Negotiable</li>
                                     <li>Upto 6-months probation period</li>
@@ -145,7 +140,7 @@ const JrDev = () => {
                         </div>
                         <div className='mt-6'>
                             <h2 className='text-xl lg:text-3xl font-poppins font-semibold text-monkwhite'>Application Instructions</h2>
-                            <p className='text-sm lg:text-lg text-monkwhite mt-3'>To apply please send your updated CV to career@fatmonk.studio by mentioning “Junior Developer” in the subject line.</p>
+                            <p className='text-sm lg:text-lg text-monkwhite mt-3'>To apply, please send your updated CV to career@fatmonk.studio with “Software Engineer (Laravel & React)” mentioned in the subject line.</p>
                         </div>
                     </div>
                 </div>
