@@ -2,7 +2,7 @@ import React from 'react';
 
 const Revitalize = () => {
     return (
-        <div className='relative bg-gradient-to-r from-[#FF0961] to-[#4444C4] h-[880px]  lg:h-[720px]'>
+        <div className='relative bg-gradient-to-r from-[#FF0961] to-[#4444C4] h-[700px]  lg:h-[720px]'>
             {/* Gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-tr from-[#FF0961] to-[#4444C4]/5"></div>
 
@@ -12,8 +12,8 @@ const Revitalize = () => {
                 <div className='lg:w-[680px]'>
                     <img src="/monk.png" alt="" />
                 </div>
-                <div className='bg-gradient-b from-monkwhite/0 to-monkwhite/5 border-2 border-monkwhite border-opacity-10 p-10 rounded-3xl mx-3 lg:mx-7 lg:max-w-[800px]'>
-                    <div className='grid grid-cols-1 px-7 lg:px-0 md:mb-10'>
+                <div className='bg-gradient-b from-monkwhite/0 to-monkwhite/5 border-2 border-monkwhite border-opacity-10 lg:p-10 p-4 rounded-3xl mx-3 lg:mx-7 lg:max-w-[800px]'>
+                    <div className='grid grid-cols-1 px-0 lg:px-0 md:mb-10'>
                         <div>
                             <h3 className='text-[25px] md:text-[30px] lg:text-5xl md:leading-[35px] lg:leading-[60px] font-poppins text-monkwhite font-bold mt-3 leading-8 text-center md:text-left'>Revitalize businesses with innovative design.</h3>
                         </div>

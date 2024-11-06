@@ -47,7 +47,7 @@ const OurWorks = () => {
                     <h1 className='text-3xl lg:text-5xl font-semibold text-monkwhite leading-[35px] md:leading-[70px] mb-10 md:mb-16'>
                         Our Works
                     </h1>
-                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 lg:w-[980px]'>
+                    <div className='mb-4 grid grid-cols-2 lg:grid-cols-2 gap-6 lg:w-[980px]'>
                         {works.map((work, index) => (
                             <motion.div
                                 key={work.id}
@@ -62,17 +62,17 @@ const OurWorks = () => {
                                 }}
                                 className={`${work.id % 2 === 0 ? 'lg:mt-20' : ''}`}
                             >
-                                <div className='lg:w-[430px] w-[280px] relative overflow-hidden rounded-3xl hover:rounded-5xl lg:hover:rounded-[70px] transition-all duration-300'>
+                                <div className='lg:w-[430px] w-[160px] relative overflow-hidden rounded-3xl hover:rounded-5xl lg:hover:rounded-[70px] transition-all duration-300'>
                                     <img
                                         src={work.imgSrc}
                                         alt={work.title}
                                         className='transition-transform duration-300 transform hover:scale-150 rounded-lg'
                                     />
                                 </div>
-                                <h3 className='text-start lg:text-2xl text-[20px] mt-4 text-monkwhite font-poppins font-semibold w-[280px] lg:w-[380px] leading-6 lg:leading-9'>
+                                <h3 className='text-start lg:text-2xl text-sm mt-4 text-monkwhite font-poppins font-semibold w-[160px] lg:w-[380px] leading-5 lg:leading-9'>
                                     {work.title}
                                 </h3>
-                                <p className='text-start lg:w-[450px] lg:text-lg text-[16px] mt-2 text-monkwhite font-poppins font-normal w-[280px] leading-5 lg:leading-7'>
+                                <p className='text-start lg:w-[450px] lg:text-lg text-xs mt-2 text-monkwhite font-poppins font-normal w-[160px] leading-5 lg:leading-7'>
                                     {work.description}
                                 </p>
                             </motion.div>

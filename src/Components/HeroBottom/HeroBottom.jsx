@@ -3,7 +3,7 @@ import {motion} from 'framer-motion';
 
 const HeroBottom = () => {
     return (
-        <div className="hero min-h-screen lg:min-h-[700px] bg-monkblack">
+        <div className="hero min-h-full lg:min-h-[700px] bg-monkblack">
             <div className="hero-content lg:w-[1180px] flex-col lg:flex-row lg:mx-auto">
                 
                 <div>
@@ -44,7 +44,7 @@ const HeroBottom = () => {
                     duration: 0.3,
                 }}
                 whileHover={{ scale: 1.1 }}
-                src="/herobottom.png" className="max-w-[300px] md:max-w-lg rounded-full shadow-2xl" />
+                src="/herobottom.png" className="max-w-[300px] md:max-w-lg rounded-full shadow-2xl mt-8 lg:mt-0" />
             </div>
         </div>
     );

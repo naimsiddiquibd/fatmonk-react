@@ -9,7 +9,7 @@ const Hero = () => {
 
     return (
         <div className='w-full flex-1 overflow-x-hidden overflow-y-hidden bg-[#000]'> {/* Apply overflow-x: hidden; here */}
-            <div className="hero  min-h-[520px] sm:min-h-screen relative overflow-x-hidden overflow-y-hidden px-5 lg:px-0">
+            <div className="hero  min-h-[460px] sm:min-h-screen relative overflow-x-hidden overflow-y-hidden px-5 lg:px-0">
                 <div className='flex items-center mt-44 overflow-x-hidden'>
                     <Img
                         className='absolute -left-0 w-[600px] z-30 left-image'
@@ -43,7 +43,7 @@ const Hero = () => {
     font-poppins font-medium px-5 md:px-5 md:py-2 py-3 rounded-full
     text-[15px] text-monkwhite md:text-[16px]
     hover:bg-gradient-to-r hover:to-[#4444C4] hover:from-[#FF003D]
-    cursor-pointer lg:mt-16 mt-12
+    cursor-pointer lg:mt-16 mt-8
   '
 >
   Discuss your Project
