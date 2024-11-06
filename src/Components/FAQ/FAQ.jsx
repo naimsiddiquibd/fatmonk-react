@@ -46,7 +46,7 @@ const FAQ = () => {
     
     return (
         <div className='bg-[#000] px-5 lg:px-0 lg:py-16 py-6'>
-            <h1 className='text-center font-poppins text-[30px] md:text-[60px] font-bold my-6 md:my-12 text-monkwhite'>Have Questions ?</h1>
+            <h1 className='text-3xl lg:text-5xl font-semibold text-monkwhite leading-[35px] md:leading-[70px] text-center mb-8 lg:mb-12'>Have Questions ?</h1>
             <div className="space-y-4 lg:w-[980px] lg:mx-auto">
       {faqs.map((faq, index) => (
         <div
@@ -58,7 +58,7 @@ const FAQ = () => {
             onClick={() => toggleAccordion(index)}
           >
             
-            <span className="font-medium text-left text-[14px] md:text-[16px] lg:text-[24px]  flex items-center lg:p-4">
+            <span className="font-medium text-left text-[14px] lg:text-lg  flex items-center lg:p-4">
            
                 {faq.question}</span>
             <HiOutlineChevronDown

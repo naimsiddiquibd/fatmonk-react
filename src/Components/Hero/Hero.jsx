@@ -8,7 +8,7 @@ const Hero = () => {
     };
 
     return (
-        <div className='w-full overflow-x-hidden overflow-y-hidden bg-[#000]'> {/* Apply overflow-x: hidden; here */}
+        <div className='w-full flex-1 overflow-x-hidden overflow-y-hidden bg-[#000]'> {/* Apply overflow-x: hidden; here */}
             <div className="hero  min-h-[520px] sm:min-h-screen relative overflow-x-hidden overflow-y-hidden px-5 lg:px-0">
                 <div className='flex items-center mt-44 overflow-x-hidden'>
                     <Img
@@ -33,10 +33,24 @@ const Hero = () => {
                     src="/herolay.png"
                 />
                 {/* body */}
-                <div className='lg:absolute lg:w-[1180px] z-40 md:col-span-9 lg:ml-0 mt-10'>
+                <div className='lg:absolute lg:w-[1180px] z-50 md:col-span-9 lg:ml-0 mt-10'>
                     <h2 className='font-poppins text-lg text-monkwhite lg:text-4xl  '>Transform Your Idea Into</h2>
-                    <h1 className='font-poppins font-bold text-monkwhite text-5xl lg:text-8xl my-1 lg:my-3'>Reality with<br></br> Fatmonk</h1>
-                    <button onClick={handleDiscussProject} className='bg-monkred font-poppins font-semibold px-5 md:px-11 md:py-8 py-3 rounded-full text-sm text-monkwhite mt-5 md:mt-5 md:text-[22px] hover:bg-monkdeepred cursor-pointer'>Discuss your Project</button>
+                    <h1 className='font-poppins font-bold text-monkwhite text-5xl lg:text-7xl my-4 lg:my-3 leading-[50px]'>Reality with Fatmonk</h1>
+                    <button
+  onClick={handleDiscussProject}
+  className='
+    flex items-center gap-3 bg-gradient-to-r to-[#FF003D] from-[#4444C4]
+    font-poppins font-medium px-5 md:px-5 md:py-2 py-3 rounded-full
+    text-[15px] text-monkwhite md:text-[16px]
+    hover:bg-gradient-to-r hover:to-[#4444C4] hover:from-[#FF003D]
+    cursor-pointer lg:mt-16 mt-12
+  '
+>
+  Discuss your Project
+  <img className='h-9 w-9 lg:h-12 lg:w-12' src="/button-icon.png" alt="" />
+</button>
+
+
                 </div>
             </div>
         </div>

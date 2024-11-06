@@ -8,18 +8,22 @@ import GridGallery from '../../Components/AboutComponents/GridGallery/GridGaller
 import Feedback from '../../Components/Feedback/Feedback';
 import Contact from '../../Components/AboutComponents/Contact/Contact';
 import StickyIcons from '../../Components/StickyIcons/StickyIcons';
+import WorksHero2 from '../../Components/Works/WorksHero2';
+import OurWorks2 from '../../Components/OurWorks2/OurWorks2';
 
 const Work = () => {
     return (
-        <div>
+        <div className='bg-[#000000]'>
            <Navbar></Navbar>
            <StickyIcons></StickyIcons>
-           <WorkHero></WorkHero>
-           <OurWorks></OurWorks>
-           <MarqueeSection></MarqueeSection>
+           {/* <WorkHero></WorkHero> */}
+           <WorksHero2></WorksHero2>
+           {/* <OurWorks></OurWorks> */}
+           <OurWorks2></OurWorks2>
+           {/* <MarqueeSection></MarqueeSection>
      
            <Feedback></Feedback>
-           <Contact></Contact>
+           <Contact></Contact> */}
            <Footer></Footer>
         </div>
     );

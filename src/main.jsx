@@ -17,6 +17,7 @@ import Ruby from './Pages/Ruby/Ruby.jsx';
 import UiUxJob from './Pages/UiUxJob/UiUxJob.jsx';
 import JrDev from './Pages/JrDev/JrDev.jsx';
 import Planner from './Pages/Planner/Planner.jsx';
+import HostingPage from './Pages/Hosting/HostingPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
     element: <Work></Work>
   },
   {
+    path: "/hosting",
+    element: <HostingPage></HostingPage>
+  },
+  {
     path: "/career",
     element: <Career></Career>
   },
@@ -56,11 +61,27 @@ const router = createBrowserRouter([
     element: <UiUxJob></UiUxJob>
   },
   {
-    path: "/junior-developer",
+    path: "/software-engineer",
     element: <JrDev></JrDev>
   },
   {
     path: "/planner",
+    element: <Planner></Planner>
+  },
+  {
+    path: "/career/ruby-on-rails-developer",
+    element: <Ruby></Ruby>
+  },
+  {
+    path: "/career/ui-ux-designer",
+    element: <UiUxJob></UiUxJob>
+  },
+  {
+    path: "/career/software-engineer",
+    element: <JrDev></JrDev>
+  },
+  {
+    path: "/career/planner",
     element: <Planner></Planner>
   },
 ]);

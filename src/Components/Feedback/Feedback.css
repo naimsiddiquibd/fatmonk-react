@@ -1,0 +1,28 @@
+/* Define animations for right and left scrolling */
+@keyframes scroll-right {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
+
+.scroll-right, .scroll-left {
+    display: flex;
+    gap: 1rem;
+    white-space: nowrap;
+}
+
+.scroll-right {
+    animation: scroll-right 100s linear infinite;
+}
+
+.scroll-left {
+    animation: scroll-left 100s linear infinite;
+}
+
+html, body {
+    overflow-x: hidden;
+}

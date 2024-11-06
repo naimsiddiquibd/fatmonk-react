@@ -5,10 +5,12 @@ const FeaturedVideo = () => {
     const { scrollYProgress } = useScroll();
 
     return (
-        <div>
-            <video className='w-full' autoPlay loop muted>
-                <source src="https://res.cloudinary.com/dnyx4cy8o/video/upload/v1708861899/q6eybo5zdynm6hvc7nzv.mp4" type='video/mp4' />
-            </video>
+        <div style={{ overflow: 'hidden', width: '100vw', height: '50vh' }}>
+            <img 
+                src="https://res.cloudinary.com/deyd102hk/image/upload/v1730367148/348c5306be17d5c8676b87a7ac46a48c_zdj2nx.gif" 
+                alt="Featured GIF" 
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
         </div>
     );
 };

@@ -28,9 +28,9 @@ const CareerJobs = () => {
             </div>
 
             <div className='font-poppins text-center z-30'>
-            
+
                 <div className='grid grid-cols-1 xl:grid-cols-2 gap-6 md:gap-10 lg:px-60 px-6'>
-                <motion.div
+                    <motion.div
                         initial={{ y: 100, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{
@@ -41,7 +41,7 @@ const CareerJobs = () => {
                             duration: 0.2,
                         }}
                     >
-                       <Link to="/junior-developer" className="card w-full bg-[#000] shadow-xl">
+                        <Link to="/career/software-engineer" className="card w-full bg-[#000] shadow-xl">
                             <figure><img src="/job2.png" alt="Shoes" /></figure>
                             <div className="card-body text-left">
                                 <h2 className="card-title text-monkwhite text-2xl">Software Engineer</h2>
@@ -62,29 +62,8 @@ const CareerJobs = () => {
                             duration: 0.2,
                         }}
                     >
-                        <div className="card w-full bg-[#000] shadow-xl">
-                            <figure><img src="/job4.png" alt="Shoes" /></figure>
-                            <Link to="/ruby-on-rails-developer" className="card-body text-left">
-                                <h2 className="card-title text-monkwhite text-2xl">Ruby On Rails Developer</h2>
-                                <h3 className='text-monkred text-lg leading-3 mb-4 font-semibold'>Full time</h3>
-                                <p className='text-monkwhite text-sm'>We're in search of a skilled Mid/Senior Ruby On Rails Developer to join our dedicated team. In this role, you'll contribute to the development and maintenance of our web-based applications.</p>
-
-                            </Link>
-                        </div>
-                    </motion.div>
-                    <motion.div
-                        initial={{ y: 100, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        transition={{
-                            delay: 0.2,
-                            y: { type: 'spring', stiffness: 60 },
-                            opacity: { duration: 0.2 },
-                            ease: "easeIn",
-                            duration: 0.2,
-                        }}
-                    >
-                       <Link to="/ui-ux-designer" className="card w-full bg-[#000] shadow-xl">
-                            <figure><img src="/job3.png" alt="Shoes" /></figure>
+                        <Link to="/career/ui-ux-designer" className="card w-full bg-[#000] shadow-xl">
+                            <figure><img src="/job5.png" alt="Shoes" /></figure>
                             <div className="card-body text-left">
                                 <h2 className="card-title text-monkwhite text-2xl">Ui Ux Designer</h2>
                                 <h3 className='text-monkred text-lg leading-3 mb-4 font-semibold'>Full time</h3>
@@ -104,7 +83,28 @@ const CareerJobs = () => {
                             duration: 0.2,
                         }}
                     >
-                        <Link to="/planner" className="card w-full bg-[#000] shadow-xl">
+                        <div className="card w-full bg-[#000] shadow-xl">
+                            <figure><img src="/job4.png" alt="Shoes" /></figure>
+                            <Link to="/career/ruby-on-rails-developer" className="card-body text-left">
+                                <h2 className="card-title text-monkwhite text-2xl">Ruby On Rails Developer</h2>
+                                <h3 className='text-monkred text-lg leading-3 mb-4 font-semibold'>Full time</h3>
+                                <p className='text-monkwhite text-sm'>We're in search of a skilled Mid/Senior Ruby On Rails Developer to join our dedicated team. In this role, you'll contribute to the development and maintenance of our web-based applications.</p>
+
+                            </Link>
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        initial={{ y: 100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{
+                            delay: 0.2,
+                            y: { type: 'spring', stiffness: 60 },
+                            opacity: { duration: 0.2 },
+                            ease: "easeIn",
+                            duration: 0.2,
+                        }}
+                    >
+                        <Link to="/career/planner" className="card w-full bg-[#000] shadow-xl">
                             <figure><img src="/job1.png" alt="Shoes" /></figure>
                             <div className="card-body text-left">
                                 <h2 className="card-title text-monkwhite text-2xl">Strategic Planner</h2>

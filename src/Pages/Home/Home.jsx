@@ -13,6 +13,8 @@ import HeroBottom from '../../Components/HeroBottom/HeroBottom';
 import Learn from '../../Components/Learn/Learn';
 import FAQ from '../../Components/FAQ/FAQ';
 import Footer from '../../Components/Footer/Footer';
+import CounterTwo from '../../Components/CounterTwo/CounterTwo';
+import DropUs from '../../Components/DropUs/DropUs';
 
 const Home = () => {
     return (
@@ -25,11 +27,13 @@ const Home = () => {
             <Enhancing></Enhancing>
             <OurWorks></OurWorks>
             <Revitalize></Revitalize>
-            <Counter></Counter>
+            <CounterTwo></CounterTwo>
+            {/* <Counter></Counter> */}
             <Feedback></Feedback>
             <HeroBottom></HeroBottom>
             <Learn></Learn>
             <FAQ></FAQ>
+            <DropUs></DropUs>
             <Footer></Footer>
         </div>
     );

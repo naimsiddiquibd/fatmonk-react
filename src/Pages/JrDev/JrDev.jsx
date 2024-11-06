@@ -51,7 +51,7 @@ const JrDev = () => {
                             </Link>
                         </div>
                         <div className='lg:mr-8'>
-                            <h1 className='text-monkwhite font-semibold text-3xl lg:text-[60px] lg:leading-[60px]'>JUNIOR DEVELOPER</h1>
+                            <h1 className='text-monkwhite font-semibold text-3xl lg:text-[60px] lg:leading-[60px]'>SOFTWARE ENGINEER</h1>
                         </div>
                         <div></div>
                     </div>
