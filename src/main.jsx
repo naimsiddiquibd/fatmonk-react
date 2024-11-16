@@ -18,6 +18,7 @@ import UiUxJob from './Pages/UiUxJob/UiUxJob.jsx';
 import JrDev from './Pages/JrDev/JrDev.jsx';
 import Planner from './Pages/Planner/Planner.jsx';
 import HostingPage from './Pages/Hosting/HostingPage.jsx';
+import Plans from './Pages/Plans/Plans.jsx';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: "/hosting",
     element: <HostingPage></HostingPage>
+  },
+  {
+    path: "/plans",
+    element: <Plans></Plans>
   },
   {
     path: "/career",

@@ -48,6 +48,7 @@ const Navbar = () => {
                                     </ul>
                                 </details>
                             </li>
+                            <li><Link to="/plans" className={isActive("/plans") ? 'text-monkred' : ''}>Plans</Link></li>
                             <li><Link to="/works" className={isActive("/works") ? 'text-monkred' : ''}>Works</Link></li>
                             <li><Link to="/career" className={isActive("/career") ? 'text-monkred' : ''}>Career</Link></li>
                             <li><Link to="/hosting" className={isActive("/hosting") ? 'text-monkred' : ''}>Hosting</Link></li>
@@ -117,6 +118,7 @@ const Navbar = () => {
                             </ul>
                         </details>
                     </li>
+                    <li><Link to="/plans" className={isActive("/plans") ? 'text-monkred' : ''}>Plans</Link></li>
                     <li><Link to="/works" className={isActive("/works") ? 'text-monkred' : ''}>Works</Link></li>
                     <li><Link to="/career" className={isActive("/career") ? 'text-monkred' : ''}>Career</Link></li>
                     <li><Link to="/hosting" className={isActive("/career") ? 'text-monkred' : ''}>Hosting</Link></li>
