@@ -1,6 +1,45 @@
 import React, { useState } from 'react';
 
 const FlexibleHourly = () => {
+    const clients = [
+        { logo: '/client/0.png' },
+        { logo: '/client/1.png' },
+        { logo: '/client/2.png' },
+        { logo: '/client/3.png' },
+        { logo: '/client/4.png' },
+        { logo: '/client/5.png' },
+        { logo: '/client/6.png' },
+        { logo: '/client/7.png' },
+        { logo: '/client/8.png' },
+        { logo: '/client/9.png' },
+        { logo: '/client/14.png' },
+        { logo: '/client/15.png' },
+        { logo: '/client/16.png' },
+        { logo: '/client/17.png' },
+        { logo: '/client/18.png' },
+        { logo: '/client/19.png' },
+        { logo: '/client/20.png' },
+        { logo: '/client/21.png' },
+        { logo: '/client/22.png' },
+        { logo: '/client/23.png' },
+        { logo: '/client/24.png' },
+        { logo: '/client/25.png' },
+        { logo: '/client/26.png' },
+        { logo: '/client/27.png' },
+        { logo: '/client/28.png' },
+        { logo: '/client/29.png' },
+        { logo: '/client/30.png' },
+        { logo: '/client/31.png' },
+        { logo: '/client/32.png' },
+        { logo: '/client/33.png' },
+        { logo: '/client/34.png' },
+        { logo: '/client/35.png' },
+        { logo: '/client/36.png' },
+        { logo: '/client/37.png' },
+        { logo: '/client/38.png' },
+        { logo: '/client/39.png' },
+    ];
+
     const [selectedRole, setSelectedRole] = useState('Senior Designer');
 
     const roleDetails = {
@@ -67,8 +106,8 @@ const FlexibleHourly = () => {
                             key={role}
                             onClick={() => setSelectedRole(role)}
                             className={`bg-[#170723] px-5 py-3 rounded-full border-[1px] border-monkwhite text-monkwhite text-sm mt-1 ${selectedRole === role
-                                    ? 'bg-opacity-100 border-opacity-30'
-                                    : 'bg-opacity-20 border-opacity-30'
+                                ? 'bg-opacity-100 border-opacity-30'
+                                : 'bg-opacity-20 border-opacity-30'
                                 }`}
                         >
                             {role}
@@ -101,6 +140,24 @@ const FlexibleHourly = () => {
                     </div>
                 </div>
             </div>
+            <div className='mt-10 flex flex-col justify-center items-center'>
+                <p className='text-center font-bold text-xl lg:w-96 bg-gradient-to-r from-[#58033E] to-[#5B38AC] bg-clip-text text-transparent mx-4'>Over 100+ ambitious startups across
+                    various industries rely on us!</p>
+            </div>
+            <div className="mt-10 px-4 lg:px-20">
+    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-4">
+        {clients.map((client, index) => (
+            <div key={index} className="flex justify-center items-center">
+                <img 
+                    src={client.logo} 
+                    alt={`Client ${index}`} 
+                    className="h-16 w-auto object-contain bg-monkwhite rounded-full shadow-lg p-3 grayscale" 
+                />
+            </div>
+        ))}
+    </div>
+</div>
+
         </div>
     );
 };

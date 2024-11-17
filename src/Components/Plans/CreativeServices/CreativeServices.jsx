@@ -5,14 +5,14 @@ const CreativeServices = () => {
     return (
         <div className='bg-monkblack my-10'>
             <div className='lg:flex lg:items-center lg:justify-between lg:gap-1.5'>
-                <div className='border-[1px] border-monkwhite border-opacity-15 rounded-r-lg w-[570px] min-h-[510px] py-10 flex-col lg:flex items-end pr-10 hidden'>
+                <div className='border-[1px] border-monkwhite border-opacity-15 rounded-r-lg w-2/5 min-h-[505px] py-10 flex-col lg:flex items-end pr-10 hidden'>
                     <div>
                         <p className='text-lg text-monkwhite font-semibold text-start w-56'>Our Creative Services Are
                             All Included in These Packages</p>
                         <img className='w-64' src="/creative.png" alt="" />
                     </div>
                 </div>
-                <div className='bg-gradient-to-r from-[#5B38AC] to-[#58033E] pr-24 pl-6 pt-6 pb-7 lg:w-[868px] rounded-l-lg mx-4 lg:mx-0'>
+                <div className='bg-gradient-to-r from-[#5B38AC] to-[#58033E] pr-24 pl-6 pt-6 pb-7 lg:w-3/5 rounded-l-lg mx-4 lg:mx-0'>
                     <div className='grid grid-cols-1 lg:grid-cols-3'>
                         <div>
                             <h3 className='font-bold text-monkwhite text-sm'>*** UI/UX Design Services</h3>
