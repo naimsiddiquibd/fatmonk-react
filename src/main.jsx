@@ -19,6 +19,8 @@ import JrDev from './Pages/JrDev/JrDev.jsx';
 import Planner from './Pages/Planner/Planner.jsx';
 import HostingPage from './Pages/Hosting/HostingPage.jsx';
 import Plans from './Pages/Plans/Plans.jsx';
+import InternDeveloper from './Pages/InternDeveloper/InternDeveloper.jsx';
+import WordPressDeveloper from './Pages/WordpressDeveloper/WordpressDeveloper.jsx';
 
 const router = createBrowserRouter([
   {
@@ -88,6 +90,14 @@ const router = createBrowserRouter([
   {
     path: "/career/planner",
     element: <Planner></Planner>
+  },
+  {
+    path: "/career/intern-developer",
+    element: <InternDeveloper></InternDeveloper>
+  },
+  {
+    path: "/career/wordpress-developer",
+    element: <WordPressDeveloper></WordPressDeveloper>
   },
 ]);
 

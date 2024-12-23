@@ -41,12 +41,58 @@ const CareerJobs = () => {
                             duration: 0.2,
                         }}
                     >
-                        <Link to="/career/software-engineer" className="card w-full bg-[#000] shadow-xl">
-                            <figure><img src="/job2.png" alt="Shoes" /></figure>
+                        <Link to="/career/intern-developer" className="card w-full bg-[#000] shadow-xl">
+                            <figure><img src="/dev-intern.png" alt="Intern Developer" /></figure>
                             <div className="card-body text-left">
-                                <h2 className="card-title text-monkwhite text-2xl">Software Engineer</h2>
+                                <h2 className="card-title text-monkwhite text-2xl">Intern Developer</h2>
+                                <h3 className='text-monkred text-lg leading-3 mb-4 font-semibold'>Internship</h3>
+                                <p className='text-monkwhite text-sm'>
+                                    An opportunity to gain real-world experience in web development, working with MERN, Laravel, React, and Next.js. Perfect for freshers eager to learn and grow in a supportive environment.
+                                </p>
+                            </div>
+                        </Link>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ y: 100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{
+                            delay: 0.2,
+                            y: { type: 'spring', stiffness: 60 },
+                            opacity: { duration: 0.2 },
+                            ease: "easeIn",
+                            duration: 0.2,
+                        }}
+                    >
+                        <Link to="/career/wordpress-developer" className="card w-full bg-[#000] shadow-xl">
+                            <figure><img src="/dev-wp.png" alt="WordPress Developer" /></figure>
+                            <div className="card-body text-left">
+                                <h2 className="card-title text-monkwhite text-2xl">WordPress Developer</h2>
                                 <h3 className='text-monkred text-lg leading-3 mb-4 font-semibold'>Full time</h3>
-                                <p className='text-monkwhite text-sm'>We're on the lookout for a skilled Software Engineer (Laravel & React) to join our team at Fatmonk. As a key member, you'll be instrumental in developing and maintaining our web-based applications.</p>
+                                <p className='text-monkwhite text-sm'>
+                                    Join our team as a WordPress Developer, crafting custom themes and plugins while exploring platforms like Shopify and Webflow. Perfect for those passionate about creating dynamic web experiences.
+                                </p>
+                            </div>
+                        </Link>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ y: 100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{
+                            delay: 0.2,
+                            y: { type: 'spring', stiffness: 60 },
+                            opacity: { duration: 0.2 },
+                            ease: "easeIn",
+                            duration: 0.2,
+                        }}
+                    >
+                        <Link to="/career/ui-ux-designer" className="card w-full bg-[#000] shadow-xl">
+                            <figure><img src="/job5.png" alt="Shoes" /></figure>
+                            <div className="card-body text-left">
+                                <h2 className="card-title text-monkwhite text-2xl">UI UX Designer</h2>
+                                <h3 className='text-monkred text-lg leading-3 mb-4 font-semibold'>Full time</h3>
+                                <p className='text-monkwhite text-sm'>The UI/UX Designer is pivotal for content creation and production, crafting compelling stories, and bringing ideas to life through impactful design. Success demands attention to detail, superb skills.</p>
 
                             </div>
                         </Link>
@@ -62,12 +108,12 @@ const CareerJobs = () => {
                             duration: 0.2,
                         }}
                     >
-                        <Link to="/career/ui-ux-designer" className="card w-full bg-[#000] shadow-xl">
-                            <figure><img src="/job5.png" alt="Shoes" /></figure>
+                        <Link to="/career/software-engineer" className="card w-full bg-[#000] shadow-xl">
+                            <figure><img src="/job2.png" alt="Shoes" /></figure>
                             <div className="card-body text-left">
-                                <h2 className="card-title text-monkwhite text-2xl">Ui Ux Designer</h2>
+                                <h2 className="card-title text-monkwhite text-2xl">Software Engineer</h2>
                                 <h3 className='text-monkred text-lg leading-3 mb-4 font-semibold'>Full time</h3>
-                                <p className='text-monkwhite text-sm'>The UI/UX Designer is pivotal for content creation and production, crafting compelling stories, and bringing ideas to life through impactful design. Success demands attention to detail, superb skills.</p>
+                                <p className='text-monkwhite text-sm'>We're on the lookout for a skilled Software Engineer (Laravel & React) to join our team at Fatmonk. As a key member, you'll be instrumental in developing and maintaining our web-based applications.</p>
 
                             </div>
                         </Link>
