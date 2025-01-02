@@ -1,108 +1,191 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from './Pages/Home/Home.jsx';
-import Services from './Pages/Services/Services.jsx';
-import UiUx from './Pages/UiUx/UiUx.jsx';
-import BrandDesign from './Pages/BrandDesign/BrandDesign.jsx';
-import Work from './Pages/Work/Work.jsx';
-import Career from './Pages/Career/Career.jsx';
-import ContactPage from './Pages/ContactPage/ContactPage.jsx';
-import Ruby from './Pages/Ruby/Ruby.jsx';
-import UiUxJob from './Pages/UiUxJob/UiUxJob.jsx';
-import JrDev from './Pages/JrDev/JrDev.jsx';
-import Planner from './Pages/Planner/Planner.jsx';
-import HostingPage from './Pages/Hosting/HostingPage.jsx';
-import Plans from './Pages/Plans/Plans.jsx';
-import InternDeveloper from './Pages/InternDeveloper/InternDeveloper.jsx';
-import WordPressDeveloper from './Pages/WordpressDeveloper/WordpressDeveloper.jsx';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./Pages/Home/Home.jsx";
+import Services from "./Pages/Services/Services.jsx";
+import UiUx from "./Pages/UiUx/UiUx.jsx";
+import BrandDesign from "./Pages/BrandDesign/BrandDesign.jsx";
+import Work from "./Pages/Work/Work.jsx";
+import Career from "./Pages/Career/Career.jsx";
+import ContactPage from "./Pages/ContactPage/ContactPage.jsx";
+import Ruby from "./Pages/Ruby/Ruby.jsx";
+import UiUxJob from "./Pages/UiUxJob/UiUxJob.jsx";
+import JrDev from "./Pages/JrDev/JrDev.jsx";
+import Planner from "./Pages/Planner/Planner.jsx";
+import HostingPage from "./Pages/Hosting/HostingPage.jsx";
+import Plans from "./Pages/Plans/Plans.jsx";
+import InternDeveloper from "./Pages/InternDeveloper/InternDeveloper.jsx";
+import WordPressDeveloper from "./Pages/WordpressDeveloper/WordpressDeveloper.jsx";
+import Events from "./Pages/Events/Events.jsx";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>
+    element: (
+      <ScrollToTop>
+        <Home></Home>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/development",
-    element: <Services></Services>
+    element: (
+      <ScrollToTop>
+        <Services></Services>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/uiuxdesign",
-    element: <UiUx></UiUx>
+    element: (
+      <ScrollToTop>
+        <UiUx></UiUx>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/branddesign",
-    element: <BrandDesign></BrandDesign>
+    element: (
+      <ScrollToTop>
+        <BrandDesign></BrandDesign>
+      </ScrollToTop>
+    ),
+  },
+  {
+    path: "/events",
+    element: (
+      <ScrollToTop>
+        <Events></Events>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/works",
-    element: <Work></Work>
+    element: (
+      <ScrollToTop>
+        <Work></Work>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/hosting",
-    element: <HostingPage></HostingPage>
+    element: (
+      <ScrollToTop>
+        <HostingPage></HostingPage>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/plans",
-    element: <Plans></Plans>
+    element: (
+      <ScrollToTop>
+        <Plans></Plans>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/career",
-    element: <Career></Career>
+    element: (
+      <ScrollToTop>
+        <Career></Career>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/contact",
-    element: <ContactPage></ContactPage>
+    element: (
+      <ScrollToTop>
+        <ContactPage></ContactPage>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/ruby-on-rails-developer",
-    element: <Ruby></Ruby>
+    element: (
+      <ScrollToTop>
+        <Ruby></Ruby>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/ui-ux-designer",
-    element: <UiUxJob></UiUxJob>
+    element: (
+      <ScrollToTop>
+        <UiUxJob></UiUxJob>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/software-engineer",
-    element: <JrDev></JrDev>
+    element: (
+      <ScrollToTop>
+        <JrDev></JrDev>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/planner",
-    element: <Planner></Planner>
+    element: (
+      <ScrollToTop>
+        <Planner></Planner>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/career/ruby-on-rails-developer",
-    element: <Ruby></Ruby>
+    element: (
+      <ScrollToTop>
+        <Ruby></Ruby>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/career/ui-ux-designer",
-    element: <UiUxJob></UiUxJob>
+    element: (
+      <ScrollToTop>
+        <UiUxJob></UiUxJob>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/career/software-engineer",
-    element: <JrDev></JrDev>
+    element: (
+      <ScrollToTop>
+        <JrDev></JrDev>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/career/planner",
-    element: <Planner></Planner>
+    element: (
+      <ScrollToTop>
+        <Planner></Planner>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/career/intern-developer",
-    element: <InternDeveloper></InternDeveloper>
+    element: (
+      <ScrollToTop>
+        <InternDeveloper></InternDeveloper>
+      </ScrollToTop>
+    ),
   },
   {
     path: "/career/wordpress-developer",
-    element: <WordPressDeveloper></WordPressDeveloper>
+    element: (
+      <ScrollToTop>
+        <WordPressDeveloper></WordPressDeveloper>
+      </ScrollToTop>
+    ),
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
