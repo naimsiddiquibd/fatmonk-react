@@ -20,6 +20,7 @@ import InternDeveloper from "./Pages/InternDeveloper/InternDeveloper.jsx";
 import WordPressDeveloper from "./Pages/WordpressDeveloper/WordpressDeveloper.jsx";
 import Events from "./Pages/Events/Events.jsx";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop.jsx";
+import SoftDev from "./Pages/SoftDev/SoftDev.jsx";
 
 const router = createBrowserRouter([
   {
@@ -59,6 +60,14 @@ const router = createBrowserRouter([
     element: (
       <ScrollToTop>
         <Events></Events>
+      </ScrollToTop>
+    ),
+  },
+  {
+    path: "/software_development",
+    element: (
+      <ScrollToTop>
+        <SoftDev></SoftDev>
       </ScrollToTop>
     ),
   },
