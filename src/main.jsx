@@ -21,6 +21,7 @@ import WordPressDeveloper from "./Pages/WordpressDeveloper/WordpressDeveloper.js
 import Events from "./Pages/Events/Events.jsx";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop.jsx";
 import SoftDev from "./Pages/SoftDev/SoftDev.jsx";
+import ProductsPage from "./Pages/Products/ProductsPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -84,6 +85,14 @@ const router = createBrowserRouter([
     element: (
       <ScrollToTop>
         <HostingPage></HostingPage>
+      </ScrollToTop>
+    ),
+  },
+  {
+    path: "/products",
+    element: (
+      <ScrollToTop>
+        <ProductsPage></ProductsPage>
       </ScrollToTop>
     ),
   },

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom"; // Import useLocation hook
 import { FaWhatsapp, FaRegCopy } from "react-icons/fa";
 import {
@@ -9,13 +9,20 @@ import {
 import { IoIosCall } from "react-icons/io";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ type }) => {
+  const [varientBlack, setVarientBlack] = useState(false);
   const [copied, setCopied] = useState(false);
   const location = useLocation(); // Get current location
 
   const closeSidebar = () => {
     document.getElementById("my-drawer-3").checked = false;
   };
+
+  useEffect(() => {
+    if (type === "black") setVarientBlack(true);
+    if (type === "false") setVarientBlack(false);
+    if (!type) setVarientBlack(false);
+  }, []);
 
   const handleCopy = () => {
     navigator.clipboard.writeText("+8801722-723891");
@@ -38,13 +45,16 @@ const Navbar = () => {
             <Link to="/">
               <img
                 className="w-32 lg:w-[150px]"
-                src="/logo.svg"
+                src={varientBlack ? "/fatmonk_logo_black.svg" : "/logo.svg"}
                 alt="Fatmonk Studio"
               />
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-0 text-[8px] sm:text-[10px]  lg:text-[14px] 2xl:text-[18px] text-monkwhite font-poppins gap-0">
+            <ul
+              className="menu menu-horizontal px-0 text-[8px] sm:text-[10px]  lg:text-[14px] 2xl:text-[18px] font-poppins gap-0"
+              style={varientBlack ? { color: "black" } : { color: "white" }}
+            >
               <li>
                 <Link to="/" className={isActive("/") ? "text-monkred" : ""}>
                   Home
@@ -53,7 +63,10 @@ const Navbar = () => {
               <li>
                 <details>
                   <summary>Services</summary>
-                  <ul className="p-2 bg-[#1D232A] text-monkwhite">
+                  <ul
+                    className="p-2"
+                    style={{ color: "white", backgroundColor: "#1D232A" }}
+                  >
                     <li>
                       <Link
                         to="/development"
@@ -106,6 +119,14 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </details>
+              </li>
+              <li>
+                <Link
+                  to="/products"
+                  className={isActive("/products") ? "text-monkred" : ""}
+                >
+                  Products
+                </Link>
               </li>
               <li>
                 <Link
@@ -268,6 +289,26 @@ const Navbar = () => {
                     Brand Design
                   </Link>
                 </li>
+
+                <li>
+                  <Link
+                    to="/software_development"
+                    className={
+                      isActive("/software_development") ? "text-monkred" : ""
+                    }
+                  >
+                    Software Development
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    to="/events"
+                    className={isActive("/events") ? "text-monkred" : ""}
+                  >
+                    Events
+                  </Link>
+                </li>
               </ul>
             </details>
           </li>
@@ -279,6 +320,25 @@ const Navbar = () => {
               Plans
             </Link>
           </li>
+
+          <li>
+            <Link
+              to="/products"
+              className={isActive("/products") ? "text-monkred" : ""}
+            >
+              Products
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="/plans"
+              className={isActive("/plans") ? "text-monkred" : ""}
+            >
+              Plans
+            </Link>
+          </li>
+
           <li>
             <Link
               to="/works"

@@ -1,7 +1,7 @@
 const EventVision = () => {
   return (
     <div className="h-[822px] sm:h-auto py-20 bg-gradient-to-r from-[#1C001B] via-[#1C001B] to-[#000010] flex gap-10 justify-center items-center">
-      <div className="flex gap-16 justify-between items-center lg:flex-row sm:flex-col ">
+      <div className="flex flex-col gap-16 justify-between items-center lg:flex-row sm:flex-col ">
         <div className="w-[488px] text-monkwhite">
           <h1 className="text-4xl font-poppins font-bold mb-5">
             Turn Your Vision into Reality
