@@ -32,6 +32,22 @@ const DUMMY_DATA = [
 
     img: "/qr_product_img.png",
   },
+  {
+    title: "Tikimonk",
+    type: "Event Platform",
+    description:
+      "TikiMonk is a platform designed to streamline the management of events, workshops, webinars, and conferences. It offers tools for organizing, scheduling ...",
+
+    img: "/tikimonk_product_img.png",
+  },
+  {
+    title: "QR",
+    type: "Restaurant menu scanner App",
+    description:
+      "TikiMonk is a platform designed to streamline the management of events, workshops, webinars, and conferences. It offers tools for organizing, scheduling ...",
+
+    img: "/qr_product_img.png",
+  },
 ];
 
 const ProductsProjects = () => {
@@ -41,8 +57,8 @@ const ProductsProjects = () => {
         Projects 😎🐱‍💻
       </h1>
 
-      <div className="">
-        <div className="flex flex-wrap gap-2">
+      <div className="flex justify-center items-center">
+        <div className="w-[90%] flex justify-center items-center flex-wrap gap-2">
           {DUMMY_DATA.map((item, i) => (
             <ProjectCard
               key={i}

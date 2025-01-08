@@ -1,6 +1,6 @@
 const ProjectCard = ({ img, title, type, description }) => {
   return (
-    <div className="h-[495px] w-[500px] mt-5 mb-5 ml-5 mr-5 border-transparent rounded-3xl overflow-hidden">
+    <div className="h-[495px] w-[500px] mt-5 mb-5 ml-5 mr-5 border-transparent rounded-3xl overflow-hidden hover:scale-105 transition-all cursor-pointer">
       <div
         className="h-[325px]"
         style={{
@@ -20,7 +20,7 @@ const ProjectCard = ({ img, title, type, description }) => {
           backgroundSize: "cover",
         }}
       >
-        <h1 className="text-[28px] font-semibold px-2 pt-2 text-monkblack">
+        <h1 className="text-[28px] font-semibold px-[16.92px] pt-2 text-monkblack">
           {title} <span className="text-[20px]">({type})</span>
         </h1>
         <p className="text-[17px] text-[#454D55] px-[16.92px] py-2 line-clamp-3">

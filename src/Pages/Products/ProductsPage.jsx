@@ -1,3 +1,5 @@
+import Footer from "../../Components/Footer/Footer";
+import ProductsChoose from "../../Components/Products/ProductsChoose";
 import ProductsHeader from "../../Components/Products/ProductsHeader";
 import ProductsProjects from "../../Components/Products/ProductsProjects";
 import Navbar from "../../Components/Shared/Navbar/Navbar";
@@ -10,6 +12,8 @@ const ProductsPage = () => {
       <StickyIcons />
       <ProductsHeader />
       <ProductsProjects />
+      <ProductsChoose />
+      <Footer />
     </div>
   );
 };
