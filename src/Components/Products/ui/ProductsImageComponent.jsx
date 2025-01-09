@@ -8,7 +8,7 @@ const TEXT_IMAGES = {
   "Scalable Solutions": ["/product_choose_41.png", "/product_choose_42.png"],
 };
 
-const ProductsImageComponent = ({ src, type }) => {
+const ProductsImageComponent = ({ type }) => {
   return (
     <div className="relative px-8 py-20">
       <img

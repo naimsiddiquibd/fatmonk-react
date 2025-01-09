@@ -8,7 +8,6 @@ const ProductsChoose = () => {
     setActiveOption(option);
   };
   return (
-    // h-[587px] bg-gradient-to-r from-[#FBEBAB] to-[#E5F0A0]
     <div className="bg-monkwhite flex justify-center items-center py-[62px]">
       <div className="h-[587px] w-[80%] bg-gradient-to-r from-[#FBEBAB] to-[#E5F0A0] flex justify-around items-center">
         <div className="flex justify-center items-center mt-28">
