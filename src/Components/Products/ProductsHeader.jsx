@@ -29,7 +29,12 @@ const ProductsHeader = () => {
       </div>
 
       <div className="flex justify-center items-center mt-10">
-        <img src="/hosting_diamond.gif" alt="gif" className="" />
+        <img
+          src="/products_header_space.gif"
+          alt="gif"
+          className=""
+          style={{ mixBlendMode: "difference" }}
+        />
       </div>
     </div>
   );
