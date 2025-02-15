@@ -46,7 +46,8 @@ const HeroBottom = () => {
             </div>
           </motion.div>
         </div>
-        <motion.img
+
+        <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{
@@ -56,12 +57,16 @@ const HeroBottom = () => {
             ease: "easeIn",
             duration: 0.3,
           }}
-          // whileHover={{ scale: 1.1 }}
-          src={"/bottom_hero1.jpg"}
-          className="h-[400px] w-[400px] md:max-w-lg rounded-full shadow-2xl mt-8 lg:mt-0 object-cover transition-all"
           onMouseEnter={() => setImgHover(true)}
           onMouseLeave={() => setImgHover(false)}
-        />
+        >
+          <motion.img
+            whileHover={{ scale: 1.1 }}
+            src={"/bottom_hero1.jpg"}
+            // animate={{ scale: imgHover ? 2 : 1 }}
+            className="h-[400px] w-[400px] md:max-w-lg rounded-full shadow-2xl mt-8 lg:mt-0 object-cover transition-all"
+          />
+        </motion.div>
       </div>
     </div>
   );

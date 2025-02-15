@@ -44,53 +44,87 @@ const FlexibleHourly = () => {
 
   const roleDetails = {
     "Software Engineer": {
-      price: "$30",
-      expertise: "Expertise of Software Engineer",
+      price: "$80",
+      expertise:
+        "Expert in designing, developing, and maintaining software solutions.",
       points: [
-        "Builds scalable and efficient software solutions.",
-        "Proficient in Java, Python, and C++.",
-        "Experienced in cloud technologies like AWS and Azure.",
-        "Strong debugging and problem-solving skills.",
+        "Proficient in multiple programming languages and frameworks.",
+        "Strong problem-solving and analytical skills for complex systems.",
+        "Agile methodology practitioner ensures seamless project delivery.",
+      ],
+    },
+    "Full Stack Developer": {
+      price: "$60",
+      expertise: "Proficient in front-end and back-end development.",
+      points: [
+        "Skilled in JavaScript frameworks (React, Angular) and backend technologies (Node.js, PHP) and CMS platforms.",
+        "Expertise in database management (MySQL, MongoDB).",
+        "Builds responsive, scalable, and user-centric applications.",
       ],
     },
     "Web Developer": {
-      price: "$25",
-      expertise: "Expertise of Web Developer",
+      price: "$50",
+      expertise:
+        "Specializes in creating functional and visually appealing websites.",
       points: [
-        "Develops responsive and high-performance websites.",
-        "Skilled in HTML, CSS, JavaScript, and React.",
-        "Optimizes web applications for SEO and speed.",
-        "Ensures cross-browser and device compatibility.",
+        "Skilled in JavaScript frameworks (React, Angular) and backend technologies (Node.js, PHP) and CMS platforms.",
+        "Focus on speed optimization, SEO, and cross-browser compatibility.",
+        "Ensures responsive designs for a seamless user experience.",
+      ],
+    },
+    "MERN Developer": {
+      price: "$60",
+      expertise: "Expertise in MongoDB, Express.js, React, and Node.js.",
+      points: [
+        "Builds dynamic, single-page, and real-time web applications.",
+        "Proficient in RESTful APIs and third-party integrations.",
+        "Strong debugging and performance optimization skills.",
+      ],
+    },
+    "LAMP Developer": {
+      price: "$50",
+      expertise: "Proficient in Linux, Apache, MySQL, and PHP stack.",
+      points: [
+        "Skilled in developing robust backend systems and CMS platforms.",
+        "Expertise in database design and server management.",
+        "Proficient in HTML, CSS, JavaScript, and CMS platforms.",
+        "Focuses on secure and scalable solutions.",
+      ],
+    },
+    "Shopify Developer": {
+      price: "$40",
+      expertise: "Designs and customizes Shopify themes and stores.",
+      points: [
+        "Proficient in Liquid, HTML, CSS, and JavaScript.",
+        "Integrates third-party apps for enhanced store functionality.",
+        "Expertise in optimizing performance for e-commerce & any kind of websites.",
+      ],
+    },
+    "WordPress Developer": {
+      price: "$30",
+      expertise: "Develops custom themes, plugins, and solutions using PHP.",
+      points: [
+        "Proficient in Elementor Pro, WooCommerce, and other WordPress tools.",
+        "Focus on full responsiveness and SEO optimization.",
+        "Skilled in troubleshooting and website migrations.",
+      ],
+    },
+    "UI/UX Designer": {
+      price: "$55",
+      expertise: "Designs intuitive and visually appealing user interfaces.",
+      points: [
+        "Creates user-centered designs with wireframes and prototypes.",
+        "Proficient in Figma, Adobe XD, and Sketch.",
+        "Expertise in usability testing and design systems.",
       ],
     },
     "Account Manager": {
-      price: "$22",
-      expertise: "Expertise of Account Manager",
+      price: "$40",
+      expertise: "Builds and maintains strong client relationships.",
       points: [
-        "Manages client relationships and ensures satisfaction.",
-        "Proficient in CRM tools like Salesforce and HubSpot.",
-        "Excellent communication and negotiation skills.",
-        "Drives business growth through strategic planning.",
-      ],
-    },
-    "Design Manager": {
-      price: "$28",
-      expertise: "Expertise of Design Manager",
-      points: [
-        "Leads design teams to deliver impactful projects.",
-        "Skilled in project management and team leadership.",
-        "Ensures brand consistency across all design assets.",
-        "Expert in creating innovative design strategies.",
-      ],
-    },
-    "Senior Designer": {
-      price: "$20",
-      expertise: "Expertise of Senior Designer",
-      points: [
-        "Creates user-centered, visually engaging designs.",
-        "Skilled in Figma, Adobe XD, and Sketch.",
-        "Focuses on accessibility and inclusivity.",
-        "Expert in storytelling through design.",
+        "Expert in understanding client needs and delivering solutions.",
+        "Skilled in project coordination and communication.",
+        "Ensures timely delivery of projects within budget constraints.",
       ],
     },
   };
