@@ -52,7 +52,7 @@ const Navbar = ({ type }) => {
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul
-              className="menu menu-horizontal px-0 text-[8px] sm:text-[10px]  lg:text-[14px] 2xl:text-[18px] font-poppins gap-0"
+              className="menu menu-horizontal px-0 text-[8px] lg:text-base font-poppins gap-0"
               style={varientBlack ? { color: "black" } : { color: "white" }}
             >
               <li>

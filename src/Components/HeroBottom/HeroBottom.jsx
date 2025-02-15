@@ -57,7 +57,7 @@ const HeroBottom = () => {
             duration: 0.3,
           }}
           // whileHover={{ scale: 1.1 }}
-          src={imgHover ? "/bottom_hero1.jpg" : "/bottom_hero2.jpg"}
+          src={"/bottom_hero1.jpg"}
           className="h-[400px] w-[400px] md:max-w-lg rounded-full shadow-2xl mt-8 lg:mt-0 object-cover transition-all"
           onMouseEnter={() => setImgHover(true)}
           onMouseLeave={() => setImgHover(false)}
