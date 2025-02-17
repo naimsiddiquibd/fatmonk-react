@@ -11,7 +11,10 @@ const PlansHero = () => {
       name: "Basic",
       monthlyPrice: "$7500/mo",
       yearlyPrice: "$81,000/yr",
-      description: "Save 10% yearly!",
+      description: {
+        monthly: "Save 10% on yearly payment!",
+        yearly: "10% saved on yearly payment!",
+      },
       details: [
         "Team composition",
         "1 Fullstack Developer with Project Manager",
@@ -27,7 +30,10 @@ const PlansHero = () => {
       name: "Standard",
       monthlyPrice: "$12000/mo",
       yearlyPrice: "$1,29,600/yr",
-      description: "Save 10% yearly!",
+      description: {
+        monthly: "Save 10% on yearly payment!",
+        yearly: "10% saved on yearly payment!",
+      },
       details: [
         "Team composition",
         "1 Fullstack Developer with Project Manager",
@@ -84,6 +90,7 @@ const PlansHero = () => {
           <div className="flex justify-center mt-8">
             <img src="/20percent.png" alt="Discount" className="mx-auto w-24" />
           </div>
+
           <div className="flex justify-center mb-8">
             <div className="flex items-center gap-0 bg-monkwhite px-2 py-2 rounded-full">
               <button
@@ -108,6 +115,7 @@ const PlansHero = () => {
               </button>
             </div>
           </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
             {plans.map((plan, index) => (
               <div
@@ -139,7 +147,9 @@ const PlansHero = () => {
                     className="text-xs font-medium"
                     style={{ color: plan.gradient ? "#000" : "#FFF" }}
                   >
-                    {isYearly ? "" : plan.description}
+                    {isYearly
+                      ? plan.description.yearly
+                      : plan.description.monthly}
                   </p>
                 </div>
                 <div className="bg-monkwhite text-center py-1.5 rounded-full text-sm text-monkblack my-6">

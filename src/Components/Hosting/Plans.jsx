@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 
 const Plans = () => {
-  const [planType, setPlanType] = useState("premium");
+  const [planType, setPlanType] = useState("Pro");
+
+  const handleToggle = () =>
+    setPlanType((prev) => (prev === "Basic" ? "Pro" : "Standard"));
 
   const basicPlans = [
     {
@@ -152,7 +155,7 @@ const Plans = () => {
     },
   ];
 
-  const plans = planType === "basic" ? basicPlans : premiumPlans;
+  const plans = planType === "Standard" ? basicPlans : premiumPlans;
 
   return (
     <div className="flex flex-col items-center justify-center bg-[#0E022C] py-32 mx-auto">
@@ -166,14 +169,15 @@ const Plans = () => {
             }}
             className="text-[50px] text-center font-semibold"
           >
-            SSD Cloud Hosting ({planType === "basic" ? "Basic" : "Premium"})
+            SSD Cloud Hosting ({planType === "Standard" ? "Standard" : "Pro"})
             Plan
           </h2>
           <p className="text-[20px] font-semibold text-monkwhite text-center">
             100% SSD Disks, RAM 2GB with I/O Usage 2MB/s
           </p>
         </div>
-        <div className="flex justify-center mb-10">
+
+        {/* <div className="flex justify-center mb-10">
           <button
             onClick={() => setPlanType("basic")}
             className={`px-6 py-2 rounded-l-full ${
@@ -192,9 +196,35 @@ const Plans = () => {
                 : "bg-gray-700"
             } text-monkwhite font-semibold`}
           >
-            Premium
+            Pro
           </button>
+        </div> */}
+
+        <div className="flex justify-center mb-8">
+          <div className="flex items-center gap-0 bg-monkwhite px-2 py-2 rounded-full">
+            <button
+              className={`text-sm w-28 ${
+                planType === "Pro"
+                  ? "font-semibo2d text-monkwhite bg-gradient-to-r to-[#FF003D] from-[#4444C4] px-6 py-2 rounded-full"
+                  : "text-monkblack px-6 py-2"
+              }`}
+              onClick={() => setPlanType("Pro")}
+            >
+              Pro
+            </button>
+            <button
+              className={`text-sm ${
+                planType === "Standard"
+                  ? "font-semibold text-monkwhite bg-gradient-to-r to-[#FF003D] from-[#4444C4] px-6 py-2 rounded-full"
+                  : "text-monkblack px-6 py-2"
+              }`}
+              onClick={() => setPlanType("Standard")}
+            >
+              Standard
+            </button>
+          </div>
         </div>
+
         <div className="lg:w-[1100px] flex flex-wrap items-center justify-center gap-10 mt-10">
           {plans.map((plan, index) => (
             <div
@@ -271,7 +301,7 @@ const Plans = () => {
         ].map((item, index) => (
           <div
             key={index}
-            className="border-2 rounded-full px-6 py-3 inline-flex items-center gap-2 mt-2 hover:scale-110 transition-all"
+            className="border-2 border-monkwhite text-monkwhite rounded-full px-6 py-3 inline-flex items-center gap-2 mt-2 hover:scale-110 transition-all"
           >
             <img src="/tik.png" alt="" />
             <p>{item}</p>
