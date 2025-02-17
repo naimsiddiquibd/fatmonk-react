@@ -10,14 +10,13 @@ const PlansHero = () => {
     {
       name: "Basic",
       monthlyPrice: "$7500/mo",
-      yearlyPrice: "$7200/mo",
-      description: "Save 10% on quarterly plans, 20% on yearly!",
+      yearlyPrice: "$81,000/yr",
+      description: "Save 10% yearly!",
       details: [
         "Team composition",
         "1 Fullstack Developer with Project Manager",
         "1 Designer",
         "1 Developer (Frontend/ Backend)",
-        "What's Included:",
         "1 active task at a time",
         "Team Working Hours: 300 hours/month",
         "Flexibility: Pause/cancel anytime",
@@ -27,14 +26,13 @@ const PlansHero = () => {
     {
       name: "Standard",
       monthlyPrice: "$12000/mo",
-      yearlyPrice: "$9600/mo",
-      description: "Save 15% on quarterly plans, 25% on yearly!",
+      yearlyPrice: "$1,29,600/yr",
+      description: "Save 10% yearly!",
       details: [
         "Team composition",
         "1 Fullstack Developer with Project Manager",
         "2 Developers (Full Stack/ Frontend/ Backend)",
-        "1 Senior Designer",
-        "What's Included:",
+        "1 UI/UX Designer",
         "Max 2 active tasks at a time",
         "Team Working Hours: 320 hours/month",
         "Flexibility: Pause/cancel anytime",
@@ -45,14 +43,13 @@ const PlansHero = () => {
       name: "Custom",
       monthlyPrice: "Custom Pricing",
       yearlyPrice: "Custom Pricing",
-      description: "Save 20% on quarterly plans, 30% on yearly!",
+      description: "Save 10% yearly!",
       details: [
         "Team composition",
         "1 Dedicated Project Manager",
         "1 Account Manager",
         "Required Number of Developers",
         "Required Number of Designers",
-        "What's Included:",
         "Multiple active tasks at a time",
         "Team Working Hours: Unlimited",
         "Flexibility: Pause/cancel anytime",
@@ -88,12 +85,12 @@ const PlansHero = () => {
             <img src="/20percent.png" alt="Discount" className="mx-auto w-24" />
           </div>
           <div className="flex justify-center mb-8">
-            <div className="flex items-center gap-5 bg-monkwhite px-6 py-2 rounded-full">
+            <div className="flex items-center gap-0 bg-monkwhite px-2 py-2 rounded-full">
               <button
-                className={`text-sm ${
+                className={`text-sm w-28 ${
                   !isYearly
-                    ? "font-semibo2d text-monkwhite bg-monkblack px-7 py-2 rounded-full"
-                    : "text-monkblack"
+                    ? "font-semibo2d text-monkwhite bg-monkblack px-6 py-2 rounded-full"
+                    : "text-monkblack px-6 py-2"
                 }`}
                 onClick={handleToggle}
               >
@@ -103,7 +100,7 @@ const PlansHero = () => {
                 className={`text-sm ${
                   isYearly
                     ? "font-semibold text-monkwhite bg-monkblack px-6 py-2 rounded-full"
-                    : "text-monkblack"
+                    : "text-monkblack px-6 py-2"
                 }`}
                 onClick={handleToggle}
               >
@@ -142,7 +139,7 @@ const PlansHero = () => {
                     className="text-xs font-medium"
                     style={{ color: plan.gradient ? "#000" : "#FFF" }}
                   >
-                    {plan.description}
+                    {isYearly ? "" : plan.description}
                   </p>
                 </div>
                 <div className="bg-monkwhite text-center py-1.5 rounded-full text-sm text-monkblack my-6">

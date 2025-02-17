@@ -160,7 +160,7 @@ const FlexibleHourly = () => {
       <div className="-mt-12">
         <div className="flex flex-col justify-center items-center mx-4 lg:mx-0">
           <div className="lg:w-[850px] bg-monkwhite rounded-md shadow-lg">
-            <div className="grid grid-cols-1 lg:grid-cols-3">
+            <div className="grid grid-cols-1 lg:grid-cols-3 min-h-[244px]">
               <div className="bg-[#652CD3] bg-opacity-10 flex flex-col justify-center items-center py-12 px-8">
                 <p className="text-4xl text-[#171923] font-bold">
                   {roleDetails[selectedRole].price}

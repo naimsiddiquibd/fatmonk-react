@@ -8,37 +8,79 @@ const Plans = () => {
       location: "Nairobi",
       ssd: "2 GB SSD",
       price: "3,000 BDT /yr",
-      features: ["2 GB SSD", "2GB RAM", "50GB Bandwidth", "Unlimited Email", "Unlimited Sub Domain", "Host 1 Domain"],
+      features: [
+        "2 GB SSD",
+        "2GB RAM",
+        "50GB Bandwidth",
+        "Unlimited Email",
+        "Unlimited Sub Domain",
+        "Host 1 Domain",
+      ],
     },
     {
       location: "Tokyo",
       ssd: "5 GB SSD",
-      price: "4,480 BDT /yr",
-      features: ["5 GB SSD", "2GB RAM", "50GB Bandwidth", "Unlimited Email", "Unlimited Sub Domain", "Host 1 Domain"],
+      price: "4,500 BDT /yr",
+      features: [
+        "5 GB SSD",
+        "2GB RAM",
+        "50GB Bandwidth",
+        "Unlimited Email",
+        "Unlimited Sub Domain",
+        "Host 1 Domain",
+      ],
     },
     {
       location: "Lisbon",
       ssd: "10 GB SSD",
-      price: "6400 BDT /yr",
-      features: ["5 GB SSD", "2GB RAM", "50GB Bandwidth", "Unlimited Email", "Unlimited Sub Domain", "Host 1 Domain"],
+      price: "6,400 BDT /yr",
+      features: [
+        "10 GB SSD",
+        "2GB RAM",
+        "50GB Bandwidth",
+        "Unlimited Email",
+        "Unlimited Sub Domain",
+        "Host 1 Domain",
+      ],
     },
     {
       location: "Dever",
       ssd: "20 GB SSD",
       price: "10,200 BDT /yr",
-      features: ["5 GB SSD", "2GB RAM", "50GB Bandwidth", "Unlimited Email", "Unlimited Sub Domain", "Host 1 Domain"],
+      features: [
+        "20 GB SSD",
+        "2GB RAM",
+        "50GB Bandwidth",
+        "Unlimited Email",
+        "Unlimited Sub Domain",
+        "Host 1 Domain",
+      ],
     },
     {
       location: "Rio",
       ssd: "40 GB SSD",
       price: "14,400 BDT /yr",
-      features: ["5 GB SSD", "2GB RAM", "50GB Bandwidth", "Unlimited Email", "Unlimited Sub Domain", "Host 1 Domain"],
+      features: [
+        "40 GB SSD",
+        "2GB RAM",
+        "50GB Bandwidth",
+        "Unlimited Email",
+        "Unlimited Sub Domain",
+        "Host 1 Domain",
+      ],
     },
     {
       location: "Professor",
       ssd: "60 GB SSD",
       price: "22,000 BDT /yr",
-      features: ["5 GB SSD", "2GB RAM", "50GB Bandwidth", "Unlimited Email", "Unlimited Sub Domain", "Host 1 Domain"],
+      features: [
+        "60 GB SSD",
+        "2GB RAM",
+        "50GB Bandwidth",
+        "Unlimited Email",
+        "Unlimited Sub Domain",
+        "Host 1 Domain",
+      ],
     },
   ];
 
@@ -47,31 +89,66 @@ const Plans = () => {
       location: "Nairobi",
       ssd: "5 GB SSD",
       price: "6,000 BDT /yr",
-      features: ["2 GB SSD", "2GB RAM", "50GB Bandwidth", "Unlimited Email", "Unlimited Sub Domain", "Host 1 Domain"],
+      features: [
+        "5 GB SSD",
+        "2GB RAM",
+        "50GB Bandwidth",
+        "Unlimited Email",
+        "Unlimited Sub Domain",
+        "Host 1 Domain",
+      ],
     },
     {
       location: "Tokyo",
       ssd: "10 GB SSD",
-      price: "96,00 BDT /yr",
-      features: ["5 GB SSD", "2GB RAM", "50GB Bandwidth", "Unlimited Email", "Unlimited Sub Domain", "Host 1 Domain"],
+      price: "9,600 BDT /yr",
+      features: [
+        "10 GB SSD",
+        "2GB RAM",
+        "50GB Bandwidth",
+        "Unlimited Email",
+        "Unlimited Sub Domain",
+        "Host 1 Domain",
+      ],
     },
     {
       location: "Lisbon",
       ssd: "20 GB SSD",
       price: "14,400 BDT /yr",
-      features: ["5 GB SSD", "2GB RAM", "50GB Bandwidth", "Unlimited Email", "Unlimited Sub Domain", "Host 1 Domain"],
+      features: [
+        "20 GB SSD",
+        "2GB RAM",
+        "50GB Bandwidth",
+        "Unlimited Email",
+        "Unlimited Sub Domain",
+        "Host 1 Domain",
+      ],
     },
     {
       location: "Dever",
       ssd: "40 GB SSD",
       price: "20,400 BDT /yr",
-      features: ["5 GB SSD", "2GB RAM", "50GB Bandwidth", "Unlimited Email", "Unlimited Sub Domain", "Host 1 Domain"],
+      features: [
+        "40 GB SSD",
+        "2GB RAM",
+        "50GB Bandwidth",
+        "Unlimited Email",
+        "Unlimited Sub Domain",
+        "Host 1 Domain",
+      ],
     },
     {
       location: "Professor",
       ssd: "60 GB SSD",
       price: "25,600 BDT /yr",
-      features: ["5 GB SSD", "2GB RAM", "50GB Bandwidth", "Unlimited Email", "Unlimited Sub Domain", "Host 1 Domain"],
+      features: [
+        "60 GB SSD",
+        "2GB RAM",
+        "50GB Bandwidth",
+        "Unlimited Email",
+        "Unlimited Sub Domain",
+        "Host 1 Domain",
+      ],
     },
   ];
 
@@ -89,7 +166,8 @@ const Plans = () => {
             }}
             className="text-[50px] text-center font-semibold"
           >
-            SSD Cloud Hosting ({planType === "basic" ? "Basic" : "Premium"}) Plan
+            SSD Cloud Hosting ({planType === "basic" ? "Basic" : "Premium"})
+            Plan
           </h2>
           <p className="text-[20px] font-semibold text-monkwhite text-center">
             100% SSD Disks, RAM 2GB with I/O Usage 2MB/s
@@ -98,22 +176,31 @@ const Plans = () => {
         <div className="flex justify-center mb-10">
           <button
             onClick={() => setPlanType("basic")}
-            className={`px-6 py-2 rounded-l-full ${planType === "basic" ? "bg-gradient-to-r from-[#FFCC33] to-[#E233FF]" : "bg-gray-700"
-              } text-monkwhite font-semibold`}
+            className={`px-6 py-2 rounded-l-full ${
+              planType === "basic"
+                ? "bg-gradient-to-r from-[#FFCC33] to-[#E233FF]"
+                : "bg-gray-700"
+            } text-monkwhite font-semibold`}
           >
             Standard
           </button>
           <button
             onClick={() => setPlanType("premium")}
-            className={`px-6 py-2 rounded-r-full ${planType === "premium" ? "bg-gradient-to-r from-[#FFCC33] to-[#E233FF]" : "bg-gray-700"
-              } text-monkwhite font-semibold`}
+            className={`px-6 py-2 rounded-r-full ${
+              planType === "premium"
+                ? "bg-gradient-to-r from-[#FFCC33] to-[#E233FF]"
+                : "bg-gray-700"
+            } text-monkwhite font-semibold`}
           >
             Premium
           </button>
         </div>
         <div className="lg:w-[1100px] flex flex-wrap items-center justify-center gap-10 mt-10">
           {plans.map((plan, index) => (
-            <div key={index} className="relative hover:scale-110 transition-all">
+            <div
+              key={index}
+              className="relative hover:scale-110 transition-all lg:min-w-[307px]"
+            >
               <div className="absolute -top-0.1 lg:-top-1 flex justify-center w-full z-10">
                 <button
                   className="
@@ -182,7 +269,10 @@ const Plans = () => {
           "Daily Backup",
           "Free SSL Certificates",
         ].map((item, index) => (
-          <div key={index} className="border-2 rounded-full px-6 py-3 inline-flex items-center gap-2 mt-2 hover:scale-110 transition-all">
+          <div
+            key={index}
+            className="border-2 rounded-full px-6 py-3 inline-flex items-center gap-2 mt-2 hover:scale-110 transition-all"
+          >
             <img src="/tik.png" alt="" />
             <p>{item}</p>
           </div>
