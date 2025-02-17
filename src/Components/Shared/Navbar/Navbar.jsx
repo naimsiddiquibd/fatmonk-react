@@ -314,15 +314,6 @@ const Navbar = ({ type }) => {
           </li>
           <li>
             <Link
-              to="/plans"
-              className={isActive("/plans") ? "text-monkred" : ""}
-            >
-              Plans
-            </Link>
-          </li>
-
-          <li>
-            <Link
               to="/products"
               className={isActive("/products") ? "text-monkred" : ""}
             >
