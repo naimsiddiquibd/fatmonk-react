@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CheckIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const PlansHero = () => {
   const [isYearly, setIsYearly] = useState(false);
@@ -152,9 +153,18 @@ const PlansHero = () => {
                       : plan.description.monthly}
                   </p>
                 </div>
-                <div className="bg-monkwhite text-center py-1.5 rounded-full text-sm text-monkblack my-6">
-                  <button>Schedule a call</button>
-                </div>
+
+                <Link
+                  to="https://wa.me/+8801722723891"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer"
+                >
+                  <div className="bg-monkwhite text-center py-1.5 rounded-full text-sm text-monkblack my-6 cursor-pointer">
+                    <button>Schedule a meeting</button>
+                  </div>
+                </Link>
+
                 <div
                   className="font-normal"
                   style={{ color: plan.gradient ? "#000" : "#FFF" }}

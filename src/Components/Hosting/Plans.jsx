@@ -2,9 +2,48 @@ import React, { useState } from "react";
 
 const Plans = () => {
   const [planType, setPlanType] = useState("Pro");
+  const [modalTitle, setModalTitle] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
 
-  const handleToggle = () =>
-    setPlanType((prev) => (prev === "Basic" ? "Pro" : "Standard"));
+  const [nameError, setNameError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const [phoneError, setPhoneError] = useState(false);
+
+  const handlePackageClick = (ssd, price) => {
+    setModalTitle(`${ssd} - ${price}`);
+    document.getElementById("my_modal_1").showModal();
+  };
+
+  const sendReqHandler = () => {
+    if (!name || name === "") {
+      setNameError(true);
+    } else {
+      setNameError(false);
+    }
+
+    if (
+      !email ||
+      email === "" ||
+      !email.includes("@") ||
+      !email.includes(".com")
+    ) {
+      setEmailError(true);
+    } else {
+      setEmailError(false);
+    }
+
+    if (!phone || phone === "") {
+      setPhoneError(true);
+    } else {
+      setPhoneError(false);
+    }
+
+    if (name && email && phone) {
+      console.log(name, email, phone);
+    }
+  };
 
   const basicPlans = [
     {
@@ -177,29 +216,6 @@ const Plans = () => {
           </p>
         </div>
 
-        {/* <div className="flex justify-center mb-10">
-          <button
-            onClick={() => setPlanType("basic")}
-            className={`px-6 py-2 rounded-l-full ${
-              planType === "basic"
-                ? "bg-gradient-to-r from-[#FFCC33] to-[#E233FF]"
-                : "bg-gray-700"
-            } text-monkwhite font-semibold`}
-          >
-            Standard
-          </button>
-          <button
-            onClick={() => setPlanType("premium")}
-            className={`px-6 py-2 rounded-r-full ${
-              planType === "premium"
-                ? "bg-gradient-to-r from-[#FFCC33] to-[#E233FF]"
-                : "bg-gray-700"
-            } text-monkwhite font-semibold`}
-          >
-            Pro
-          </button>
-        </div> */}
-
         <div className="flex justify-center mb-8">
           <div className="flex items-center gap-0 bg-monkwhite px-2 py-2 rounded-full">
             <button
@@ -264,7 +280,11 @@ const Plans = () => {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-center mt-5">
+
+                <div
+                  className="flex justify-center mt-5 cursor-pointer"
+                  onClick={() => handlePackageClick(plan.ssd, plan.price)}
+                >
                   <button
                     className="
                       flex items-center gap-6 bg-gradient-to-r to-[#FF003D] from-[#4444C4]
@@ -308,6 +328,54 @@ const Plans = () => {
           </div>
         ))}
       </div>
+
+      <button
+        className="btn"
+        onClick={() => document.getElementById("my_modal_1").showModal()}
+      >
+        open modal
+      </button>
+      <dialog id="my_modal_1" className="modal">
+        <div className="modal-box">
+          <h3 className="font-bold text-lg">{modalTitle}</h3>
+          <div className="flex flex-col gap-2">
+            <input
+              type="text"
+              placeholder="Name"
+              className="w-full p-3 bg-transparent border-b border-[#fff]/50 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 placeholder-white/70"
+              onChange={(e) => setName(e.target.value)}
+            />
+            {nameError && <p className="pl-3 text-monkred">Enter your name!</p>}
+            <input
+              type="email"
+              placeholder="Email"
+              className="w-full p-3 bg-transparent border-b border-[#fff]/50 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 placeholder-white/70"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            {emailError && (
+              <p className="pl-3 text-monkred">Enter a valid email!</p>
+            )}
+            <input
+              type="number"
+              placeholder="Phone"
+              className="w-full p-3 bg-transparent border-b border-[#fff]/50 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 placeholder-white/70"
+              onChange={(e) => setPhone(e.target.value)}
+            />
+            {phoneError && (
+              <p className="pl-3 text-monkred">Enter your phone!</p>
+            )}
+
+            <div className="flex justify-end gap-4 mt-4">
+              <form method="dialog">
+                <button className="btn">Close</button>
+              </form>
+              <button className="btn" onClick={sendReqHandler}>
+                Send Request
+              </button>
+            </div>
+          </div>
+        </div>
+      </dialog>
     </div>
   );
 };

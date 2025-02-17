@@ -65,7 +65,7 @@ const ContactForm = () => {
   };
   return (
     <div
-      className="min-h-screen flex items-center justify-center text-monkwhite" //bg-gradient-to-b from-[#230914] to-[#960062]
+      className="min-h-screen flex items-center justify-center text-monkwhite bg-monkblack" //bg-gradient-to-b from-[#230914] to-[#960062]
       style={{
         backgroundImage: "url(/contact_grad_cover.png)",
         backgroundSize: "cover",
