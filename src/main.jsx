@@ -22,6 +22,8 @@ import Events from "./Pages/Events/Events.jsx";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop.jsx";
 import SoftDev from "./Pages/SoftDev/SoftDev.jsx";
 import ProductsPage from "./Pages/Products/ProductsPage.jsx";
+import JrPhpDev from "./Pages/JrPhpDev/JrPhpDev.jsx";
+import JrMernDev from "./Pages/JrMernDev/JrMernDev.jsx";
 
 const router = createBrowserRouter([
   {
@@ -173,6 +175,22 @@ const router = createBrowserRouter([
     element: (
       <ScrollToTop>
         <JrDev></JrDev>
+      </ScrollToTop>
+    ),
+  },
+  {
+    path: "/career/php-developer",
+    element: (
+      <ScrollToTop>
+        <JrPhpDev />
+      </ScrollToTop>
+    ),
+  },
+  {
+    path: "/career/mern-developer",
+    element: (
+      <ScrollToTop>
+        <JrMernDev />
       </ScrollToTop>
     ),
   },
