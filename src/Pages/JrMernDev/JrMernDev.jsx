@@ -85,6 +85,14 @@ const JrMernDev = () => {
               <p className="text-sm lg:text-lg text-monkwhite mt-3">
                 <ul className="list-disc pl-4">
                   <li>
+                    Follow standard methods for Figma design to ensure easy
+                    conversion to code
+                  </li>
+                  <li>
+                    Generate clean and responsive HTML and CSS code from Figma
+                    designs
+                  </li>
+                  <li>
                     Assist the development team with frontend and backend
                     development using the MERN stack (MongoDB, Express.js,
                     React.js, Node.js).
@@ -122,6 +130,11 @@ const JrMernDev = () => {
               </h2>
               <p className="text-sm lg:text-lg text-monkwhite mt-3">
                 <ul className="list-disc pl-4">
+                  <li>Strong knowledge of HTML, CSS, and Bootstrap.</li>
+                  <li>
+                    Basic knowledge of React, Vue, or any other front-end
+                    framework is a plus.
+                  </li>
                   <li>
                     Basic understanding of the MERN stack and willingness to
                     grow expertise in it.
@@ -182,7 +195,10 @@ const JrMernDev = () => {
               <p className="text-sm lg:text-lg text-monkwhite mt-3">
                 <ul className="list-disc pl-4">
                   <li>Festival Bonus: 2.</li>
-                  <li>Partially Subsidized Office Lunch.</li>
+                  <li>
+                    Festival Bonus (After Probation Period) and Partially
+                    Subsidized Office Lunch.
+                  </li>
                   <li>Supportive and friendly working environment.</li>
                 </ul>
               </p>
