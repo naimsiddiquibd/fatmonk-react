@@ -86,14 +86,6 @@ const WordPressDeveloper = () => {
               <p className="text-sm lg:text-lg text-monkwhite mt-3">
                 <ul className="list-disc pl-4">
                   <li>
-                    Follow standard methods for Figma design to ensure easy
-                    conversion to code
-                  </li>
-                  <li>
-                    Generate clean and responsive HTML and CSS code from Figma
-                    designs
-                  </li>
-                  <li>
                     Design, develop, and maintain custom WordPress websites.
                   </li>
                   <li>Create and customize WordPress themes and plugins.</li>
@@ -119,11 +111,6 @@ const WordPressDeveloper = () => {
               </h2>
               <p className="text-sm lg:text-lg text-monkwhite mt-3">
                 <ul className="list-disc pl-4">
-                  <li>Strong knowledge of HTML, CSS, and Bootstrap.</li>
-                  <li>
-                    Basic knowledge of React, Vue, or any other front-end
-                    framework is a plus.
-                  </li>
                   <li>
                     Strong understanding of WordPress architecture and best
                     practices.
