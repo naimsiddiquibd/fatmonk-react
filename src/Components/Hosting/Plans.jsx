@@ -329,12 +329,12 @@ const Plans = () => {
         ))}
       </div>
 
-      <button
+      {/* <button
         className="btn"
         onClick={() => document.getElementById("my_modal_1").showModal()}
       >
         open modal
-      </button>
+      </button> */}
       <dialog id="my_modal_1" className="modal">
         <div className="modal-box">
           <h3 className="font-bold text-lg">{modalTitle}</h3>
