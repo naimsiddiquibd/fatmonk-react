@@ -24,6 +24,7 @@ import SoftDev from "./Pages/SoftDev/SoftDev.jsx";
 import ProductsPage from "./Pages/Products/ProductsPage.jsx";
 import JrPhpDev from "./Pages/JrPhpDev/JrPhpDev.jsx";
 import JrMernDev from "./Pages/JrMernDev/JrMernDev.jsx";
+import ThreadwelPage from "./Pages/Threadwel/ThreadwelPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -79,6 +80,14 @@ const router = createBrowserRouter([
     element: (
       <ScrollToTop>
         <Work></Work>
+      </ScrollToTop>
+    ),
+  },
+  {
+    path: "/works/threadwel",
+    element: (
+      <ScrollToTop>
+        <ThreadwelPage />
       </ScrollToTop>
     ),
   },
