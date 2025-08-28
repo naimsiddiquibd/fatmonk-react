@@ -6,7 +6,7 @@ const TopServices = () => {
   return (
     <div className=" bg-[#0D0D0D] py-16 flex-1 mx-auto">
       <div className="grid grid-cols-2 lg:grid-cols-2 lg:gap-3 lg:w-[980px] lg:mx-auto gap-2 mx-2">
-        <Link to="/development">
+        <Link to="/web-development">
           <motion.div className="bg-none hover:bg-gradient-to-b from-[#E233FF] to-[#FF6B00] bg-opacity-5 border-[#BB9BFF26] hover:border-[#000000] border-t-[2px] border-l-[2px] border-r-[2px] px-2 py-2 lg:px-8 lg:py-6 lg:m-4 lg:mx-1 rounded-3xl cursor-pointer transition-all duration-500 ease-in-out">
             <div className="bg-gradient-to-b from-[#E233FF] w-10 h-10 lg:w-16 lg:h-16 rounded-full flex items-center justify-center to-[#FF6B00] shadow-lg">
               <img
