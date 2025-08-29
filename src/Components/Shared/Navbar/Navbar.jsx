@@ -162,6 +162,14 @@ const Navbar = ({ type }) => {
               </li>
               <li>
                 <Link
+                  to="/blog"
+                  className={isActive("/blog") ? "text-monkred" : ""}
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/contact"
                   className={isActive("/contact") ? "text-monkred" : ""}
                 >
