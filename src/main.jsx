@@ -26,6 +26,7 @@ import JrPhpDev from "./Pages/JrPhpDev/JrPhpDev.jsx";
 import JrMernDev from "./Pages/JrMernDev/JrMernDev.jsx";
 import ThreadwelPage from "./Pages/Threadwel/ThreadwelPage.jsx";
 import WebDevPage from "./Pages/WebDev/WebDevPage.jsx";
+import BlogPage from "./Pages/Blog/BlogPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,14 @@ const router = createBrowserRouter([
     element: (
       <ScrollToTop>
         <WebDevPage />
+      </ScrollToTop>
+    ),
+  },
+  {
+    path: "/blog",
+    element: (
+      <ScrollToTop>
+        <BlogPage />
       </ScrollToTop>
     ),
   },
