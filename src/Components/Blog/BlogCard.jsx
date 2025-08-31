@@ -15,7 +15,7 @@ const BlogCard = ({ tag, time, title, description, date, image }) => {
 
       <div className="flex-1 flex flex-col justify-between px-6 py-5 text-monkblack">
         <div>
-          <p className="bg-[#B4B4B4] rounded-xl w-fit px-3 py-1 mb-2 text-[16px]">
+          <p className="bg-[#B4B4B4] rounded-xl w-fit px-3 py-1 mb-2 text-[14px]">
             {tag}
           </p>
           <p className="text-[#9D9D9D] mb-2 text-[14px]">{time}</p>

@@ -27,6 +27,7 @@ import JrMernDev from "./Pages/JrMernDev/JrMernDev.jsx";
 import ThreadwelPage from "./Pages/Threadwel/ThreadwelPage.jsx";
 import WebDevPage from "./Pages/WebDev/WebDevPage.jsx";
 import BlogPage from "./Pages/Blog/BlogPage.jsx";
+import BlogDetailsPage from "./Pages/Blog Details/BlogDetailsPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -54,10 +55,18 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/blog",
+    path: "/blogs",
     element: (
       <ScrollToTop>
         <BlogPage />
+      </ScrollToTop>
+    ),
+  },
+  {
+    path: "/blogs/:id",
+    element: (
+      <ScrollToTop>
+        <BlogDetailsPage />
       </ScrollToTop>
     ),
   },
