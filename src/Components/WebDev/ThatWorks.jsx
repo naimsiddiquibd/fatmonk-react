@@ -4,7 +4,7 @@ import SquareCard from "./SquareCard";
 const ThatWorks = () => {
   return (
     <div className="min-h-[1000px] bg-[#010101]">
-      <h1 className="text-monkwhite font-bold text-5xl text-center pt-20">
+      <h1 className="text-monkwhite font-bold sm:text-3xl lg:text-5xl text-center pt-20">
         Web Development That Works
       </h1>
 
@@ -42,7 +42,7 @@ const ThatWorks = () => {
       <div className="flex justify-center items-center px-5 lg:px-20">
         <div className="flex flex-col lg:flex-row justify-center items-start gap-12 py-20">
           <img src="webdev/screenshot1.png" alt="" />
-          <div>
+          <div className="text-monkwhite">
             <h2 className="font-bold text-3xl mb-10">
               Web Development That Works
             </h2>

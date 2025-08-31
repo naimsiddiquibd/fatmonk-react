@@ -2,7 +2,7 @@ const SquareCard = ({ img, title, description, w = "330px", h = "368px" }) => {
   return (
     <div
       className={`bg-[#202020] flex flex-col justify-center items-center px-8 py-10 rounded-lg`}
-      style={{ width: w, height: h }}
+      style={{ maxWidth: w, height: h }}
     >
       <img src={img} alt="" className="mb-6" />
 

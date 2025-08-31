@@ -54,7 +54,7 @@ const DATA = [
 const ThreadwelFeatures = () => {
   return (
     <div className="min-h-[1000px] bg-[#1E72FC] flex flex-col justify-center items-center py-6">
-      <h1 className="text-monkwhite text-3xl font-bold mt-4 mb-4">
+      <h1 className="text-monkwhite text-3xl text-center md:text-left font-bold mt-4 mb-4">
         Key Feature of Threadwel ?
       </h1>
       <div className="min-h-[700px] max-w-[1500px] flex justify-center items-center flex-wrap gap-8">
