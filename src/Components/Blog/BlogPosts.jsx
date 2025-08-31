@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BlogBigCard from "./BlogBigCard";
 import BlogCard from "./BlogCard";
 import Headline from "./Headline";
@@ -71,31 +72,34 @@ const BlogPosts = () => {
       <Headline title="Our Recent Post" type="bold" />
 
       <div className="w-[80vw] mx-auto my-10">
-        <BlogBigCard
-          title="How AI is Revolutionizing Game Development and UI Design for Modern
+        <Link to={`/blogs/1`}>
+          <BlogBigCard
+            title="How AI is Revolutionizing Game Development and UI Design for Modern
           Websites"
-          description="It is a long established fact that a reader will be distracted by the
+            description="It is a long established fact that a reader will be distracted by the
                   readable content of a page when looking at its layout. The point of
                   using Lorem Ipsum is that. It is a long established fact that a reader
                   will be distracted by the readable content of a page when looking at
                   its layout. The point of using Lorem Ipsum is that...."
-          time="Sep 22,2024 - 5 MIN READ"
-        />
+            time="Sep 22,2024 - 5 MIN READ"
+          />
+        </Link>
       </div>
 
       <Headline title="Popular Post" type="normal" />
 
-      <div className="w-[80vw] mx-auto py-10  grid gap-6 grid-cols-[repeat(auto-fill,minmax(340px,1fr))]">
+      <div className="w-[80vw] mx-auto py-10  grid gap-6 grid-cols-[repeat(auto-fill,minmax(240px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(340px,1fr))]">
         {POSTS.map((post, index) => (
-          <BlogCard
-            key={index}
-            tag={post.tag}
-            time={post.time}
-            title={post.title}
-            description={post.description}
-            date={post.date}
-            image={post.image}
-          />
+          <Link key={index} to={`/blogs/${index}`}>
+            <BlogCard
+              tag={post.tag}
+              time={post.time}
+              title={post.title}
+              description={post.description}
+              date={post.date}
+              image={post.image}
+            />
+          </Link>
         ))}
       </div>
     </div>

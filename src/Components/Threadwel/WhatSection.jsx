@@ -20,7 +20,7 @@ const WhatSection = () => {
             What is Threadwel?
           </h1>
           <p
-            className="text-[#171717] max-w-[689px] text-xl mt-10"
+            className="text-[#171717] max-w-[689px] text-lg md:text-xl mt-10"
             style={{ lineHeight: "40px", letterSpacing: "0.4px" }}
           >
             Explore the innovation of Threadwel, a cutting-edge marketplace
@@ -38,7 +38,7 @@ const WhatSection = () => {
               What is ThreadWel?
             </h1>
             <p
-              className="text-[#171717] max-w-[689px] text-xl mt-10"
+              className="text-[#171717] max-w-[689px] text-lg md:text-xl mt-10"
               style={{ lineHeight: "40px", letterSpacing: "0.4px" }}
             >
               Threadwel is a transformative procurement marketplace designed for
